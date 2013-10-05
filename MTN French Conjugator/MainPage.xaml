@@ -1,0 +1,69 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="French_Conjugator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" Name="pageMain">
+
+    <phone:PhoneApplicationPage.Resources>
+        <LinearGradientBrush x:Key="Foreground1" EndPoint="1,0.5" StartPoint="0,0.5">
+            <GradientStop Color="Red" Offset="0" />
+            <GradientStop Color="#FF697FF2" Offset="1" />
+        </LinearGradientBrush>
+    </phone:PhoneApplicationPage.Resources>
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="MTN SOFTWARE" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource Foreground1}"></TextBlock>
+            <TextBlock x:Name="PageTitle" Text="French Verbs" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource Foreground1}" />
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="12,6,0,0" Name="txtVerb" Text="Enter verb here" VerticalAlignment="Top" Width="438" BorderThickness="0" AcceptsReturn="False" />
+            <RadioButton Content="Past" Height="72" HorizontalAlignment="Left" Margin="12,84,0,0" Name="radioPast" VerticalAlignment="Top" Background="{StaticResource Foreground1}" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+            <RadioButton Content="Present" Height="72" HorizontalAlignment="Right" Margin="0,84,0,0" Name="radioPresent" VerticalAlignment="Top" IsChecked="True" Background="{StaticResource Foreground1}" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+            <Button Content="- Er" Height="72" HorizontalAlignment="Left" Margin="0,347,0,0" Name="btnEr" VerticalAlignment="Top" Width="160" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" Click="erOnClick" />
+            <Button Content="- Re" Height="72" HorizontalAlignment="Left" Margin="296,347,0,0" Name="btnRe" VerticalAlignment="Top" Width="160" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+            <Button Content="- Ir" Height="72" HorizontalAlignment="Left" Margin="0,425,0,0" Name="btnIr" VerticalAlignment="Top" Width="160" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+            <Button Content="Irregular" Height="72" HorizontalAlignment="Right" Margin="0,425,0,0" Name="btnIrregular" VerticalAlignment="Top" Width="160" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+            <ListBox Height="179" HorizontalAlignment="Left" Margin="0,162,0,0" Name="ListBox1" VerticalAlignment="Top" Width="456" BorderThickness="3" BorderBrush="{StaticResource Foreground1}" RenderTransformOrigin="0.5,0.5">
+                <ListBoxItem Content="Je" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listJe" FontSize="26" />
+                <ListBoxItem Content="Tu" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listTu" FontSize="26" />
+                <ListBoxItem Content="Elle/Il/On" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="ListElle" FontSize="26" />
+                <ListBoxItem Content="Nous" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listNous" FontSize="26" />
+                <ListBoxItem Content="Vous" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listVous" FontSize="26" />
+                <ListBoxItem Content="Elles/Ils" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listElles" FontSize="26" />
+            </ListBox>
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" x:Name="appBar" Opacity="0.5" BackgroundColor="#00000000">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar.questionmark.rest.png" Text="Help" Click="btnHelp_Click" x:Name="btnHelp" />
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar.refresh.rest.png" Text="Refresh" x:Name="btnRefresh" />
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Report a bug" Click="mnuReport_Click"  x:Name="mnuReport" />
+                <shell:ApplicationBarMenuItem Text="Suggest a feature" Click="mnuSuggest_Click" x:Name="mnuSuggest" />
+                <shell:ApplicationBarMenuItem Text="About" Click="mnuAbout_Click"  x:Name="mnuAbout"  />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>
