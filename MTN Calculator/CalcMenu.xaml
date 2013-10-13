@@ -1,0 +1,69 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="MTN_Unit_Converter.CalcMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False" xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input" xmlns:telerikDataControls="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Data" xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <controls:Panorama Title="MTN Calculator Menu" Margin="-1,10,1,-10">
+
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="Calc Menu" Name="panCalcMenu">
+                <Grid>
+                    <ListBox Height="482" HorizontalAlignment="Left" Margin="5,6,0,0" Name="listCalcMenu" VerticalAlignment="Top" Width="409" ItemsSource="{Binding}"> 
+                        <telerikPrimitives:RadHubTile Height="133" HorizontalAlignment="Left" Margin="11,10,0,0" Name="tileBasicCalc" VerticalAlignment="Top" Width="133" Title="Basic" Message="Basic Calc" Background="{StaticResource PhoneAccentBrush}"></telerikPrimitives:RadHubTile>
+                    
+                    <telerikPrimitives:RadHubTile Height="133" HorizontalAlignment="Left" Margin="10,10,0,0" Message="Metro Calc" Name="tileMetro" Title="Basic" VerticalAlignment="Top" Width="133" Background="{StaticResource PhoneAccentBrush}"></telerikPrimitives:RadHubTile>
+
+                        <telerikPrimitives:RadHubTile Height="133" HorizontalAlignment="Left" Margin="10,10,0,0" Message="Trig Calc" Name="tileTrig" Title="Basic" VerticalAlignment="Top" Width="133" Background="{StaticResource PhoneAccentBrush}"></telerikPrimitives:RadHubTile>
+                    </ListBox>
+                </Grid>
+            </controls:PanoramaItem>
+
+            <!--Panorama item two-->
+            <controls:PanoramaItem Header="About">
+                <Grid>
+                    <Rectangle Height="155" HorizontalAlignment="Left" Margin="6,4,0,0" Name="Rectangle1" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="157">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MTN%20Unit%20Converter;component/Images/MTNSoftwareLogo.png" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="165,5,0,0" Name="txtProduct" Text="Product" VerticalAlignment="Top" />
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="165,68.5,0,0" Name="txtCompany" Text="Company" VerticalAlignment="Top" />
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="165,132,0,0" Name="txtVersion" Text="Version" VerticalAlignment="Top" />
+                    <TextBlock Height="312" HorizontalAlignment="Left" Margin="4,176,0,0" Name="txtDescription" Text="Description" VerticalAlignment="Top" Width="413" />
+                </Grid>
+            </controls:PanoramaItem>
+            
+            <!--Panorama item three-->
+            <controls:PanoramaItem Header="Options">
+                <Grid>
+                    <CheckBox Content="Ask to review?" Height="72" HorizontalAlignment="Left" Margin="12,20,0,0" Name="chkMsgReview" VerticalAlignment="Top" IsChecked="True" />
+                </Grid>
+            </controls:PanoramaItem>
+            
+            <!--Panorama item four-->
+            <controls:PanoramaItem Header="Report Bug">
+                <Grid>
+                    <TextBox Height="432" HorizontalAlignment="Left" Margin="-11,-11,0,0" Name="txtReport" Text="Enter your bug report here." VerticalAlignment="Top" Width="439" />
+                    <Button Content="Send Report" Height="72" HorizontalAlignment="Left" Margin="4,426,0,0" Name="btnSend" VerticalAlignment="Top" Width="413" />
+                </Grid>
+            </controls:PanoramaItem>
+            
+        </controls:Panorama>
+    </Grid>
+
+    <!--Panorama-based applications should not show an ApplicationBar-->
+
+</phone:PhoneApplicationPage>

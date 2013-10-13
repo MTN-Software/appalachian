@@ -1,0 +1,167 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkitPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls.Toolkit" 
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:el="clr-namespace:Microsoft.Expression.Interactivity.Layout;assembly=Microsoft.Expression.Interactions" 
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives" 
+    x:Class="MTN_Unit_Converter.MainPage"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="768*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"></StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Button Content="1" Height="100" HorizontalAlignment="Left" Margin="0,577,0,0" x:Name="btnOne" VerticalAlignment="Top" Width="120" BorderBrush="{StaticResource Torquoise}" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="2" Height="100" HorizontalAlignment="Left" Margin="109,577,0,0" x:Name="btnTwo" VerticalAlignment="Top" Width="120" BorderBrush="{StaticResource Torquoise}" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="3" Height="100" HorizontalAlignment="Left" Margin="218,577,0,0" x:Name="btnThree" VerticalAlignment="Top" Width="120" BorderBrush="{StaticResource Torquoise}" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="4" Height="100" HorizontalAlignment="Left" Margin="0,492,0,0" x:Name="btnFour" VerticalAlignment="Top" Width="120" BorderBrush="{StaticResource Torquoise}" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="5" Height="100" HorizontalAlignment="Left" Margin="109,492,0,0" x:Name="btnFive" VerticalAlignment="Top" Width="120" BorderBrush="{StaticResource Torquoise}" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="6" Height="100" Margin="218,492,117,0" x:Name="btnSix" VerticalAlignment="Top" BorderBrush="{StaticResource Torquoise}" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="7" Height="100" HorizontalAlignment="Left" Margin="0,407,0,0" x:Name="btnSeven" VerticalAlignment="Top" Width="120" BorderBrush="{StaticResource Torquoise}" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="8" Height="100" HorizontalAlignment="Left" Margin="109,407,0,0" x:Name="btnEight" VerticalAlignment="Top" Width="120" BorderBrush="{StaticResource Torquoise}" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="9" Height="100" HorizontalAlignment="Left" Margin="218,407,0,0" x:Name="btnNine" VerticalAlignment="Top" Width="120" Background="{StaticResource Torquoise}" BorderBrush="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="0" Height="100" HorizontalAlignment="Left" Margin="0,662,0,0" x:Name="btnZero" VerticalAlignment="Top" Width="120" BorderBrush="{StaticResource Torquoise}" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Content="=" Height="100" HorizontalAlignment="Left" Margin="218,662,0,0" x:Name="btnCalc" VerticalAlignment="Top" Width="121" Background="{StaticResource PhoneAccentBrush}" BorderBrush="{StaticResource Torquoise}" FontWeight="ExtraBold">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <TextBox Height="78" HorizontalAlignment="Left" Margin="0,112,0,0" x:Name="txtDisp" Text="TextBox" VerticalAlignment="Top" Width="450" TextAlignment="Right" FontSize="28" IsReadOnly="True" Background="Transparent"/>
+            <Button BorderBrush="{StaticResource Torquoise}" Content="+" Height="100" HorizontalAlignment="Left" Margin="330,662,0,0" x:Name="btnAdd" VerticalAlignment="Top" Width="120" FlowDirection="LeftToRight" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button BorderBrush="{StaticResource Torquoise}" Content="-" FlowDirection="LeftToRight" Height="100" HorizontalAlignment="Left" Margin="330,577,0,0" x:Name="btnSubtract" VerticalAlignment="Top" Width="120" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button BorderBrush="{StaticResource Torquoise}" Content="C" FlowDirection="LeftToRight" Height="80" HorizontalAlignment="Left" Margin="0,336,0,0" x:Name="btnClear" VerticalAlignment="Top" Width="120" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+            		<el:FluidMoveBehavior/>
+            	</i:Interaction.Behaviors>
+            </Button>
+            <Button BorderBrush="{StaticResource Torquoise}" Content="M+" FlowDirection="LeftToRight" Height="80" HorizontalAlignment="Left" Margin="109,336,0,0" x:Name="btnMemAdd" VerticalAlignment="Top" Width="120" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button BorderBrush="{StaticResource Torquoise}" Content="RM" FlowDirection="LeftToRight" Height="80" HorizontalAlignment="Right" Margin="0,336,6,0" x:Name="btnMemDisp" VerticalAlignment="Top" Width="120" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button BorderBrush="{StaticResource Torquoise}" Content="M-" FlowDirection="LeftToRight" Height="80" HorizontalAlignment="Left" Margin="218,336,0,0" x:Name="btnDelMem" VerticalAlignment="Top" Width="120" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button BorderBrush="{StaticResource Torquoise}" Content="X" FlowDirection="LeftToRight" Height="100" HorizontalAlignment="Left" Margin="330,492,0,0" x:Name="btnMultiply" VerticalAlignment="Top" Width="120" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button BorderBrush="{StaticResource Torquoise}" Content="/" FlowDirection="LeftToRight" Height="100" HorizontalAlignment="Left" Margin="330,407,0,0" x:Name="btnDivide" VerticalAlignment="Top" Width="120" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button BorderBrush="{StaticResource Torquoise}" Content="." Height="100" HorizontalAlignment="Left" Margin="109,662,0,0" x:Name="btnPoint" VerticalAlignment="Top" Width="120" Background="{StaticResource Torquoise}">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Background="{StaticResource Torquoise}" BorderBrush="{StaticResource Torquoise}" Content="√" FlowDirection="LeftToRight" Height="80" HorizontalAlignment="Left" Margin="0,266,0,0" Name="btnSqrt" VerticalAlignment="Top" Width="120">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior />
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Background="{StaticResource Torquoise}" BorderBrush="{StaticResource Torquoise}" Content="+/-" FlowDirection="LeftToRight" Height="80" HorizontalAlignment="Left" Margin="109,266,0,0" Name="btnNegative" VerticalAlignment="Top" Width="120">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior />
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Background="{StaticResource Torquoise}" BorderBrush="{StaticResource Torquoise}" Content="←" FlowDirection="LeftToRight" Height="80" HorizontalAlignment="Left" Margin="218,266,0,0" Name="btnDelete" VerticalAlignment="Top" Width="232">
+                <i:Interaction.Behaviors>
+                    <el:FluidMoveBehavior />
+                </i:Interaction.Behaviors>
+            </Button>
+            <telerikPrimitives:RadImageButton Height="90" HorizontalAlignment="Left" Name="imgButtonBack" VerticalAlignment="Top" Width="90" ButtonShape="Ellipse" BorderThickness="3" ButtonType="Arrow" IsButtonPressed="False" RenderTransformOrigin="0.5,0.5" >
+            	<telerikPrimitives:RadImageButton.RenderTransform>
+            		<CompositeTransform Rotation="-180"/>
+            	</telerikPrimitives:RadImageButton.RenderTransform>
+            </telerikPrimitives:RadImageButton>
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
