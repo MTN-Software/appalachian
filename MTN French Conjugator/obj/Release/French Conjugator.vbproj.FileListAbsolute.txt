@@ -1,0 +1,21 @@
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\ApplicationIcon.png
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\Background.png
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\French Conjugator.dll
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\French Conjugator.pdb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\French Conjugator.xml
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\AppManifest.xaml
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\French_Conjugator.xap
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\App.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\AboutPage.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\MainPage.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\ReportPage.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\SuggestPage.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\French Conjugator.g.resources
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\French Conjugator.dll
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\French Conjugator.xml
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\French Conjugator.pdb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\XapCacheFile.xml
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\IrregularVerbPage.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\Microsoft.Phone.Controls.Toolkit.xml

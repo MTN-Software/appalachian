@@ -35,14 +35,12 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,6,0,0" Name="txtAppName" Text="Product Name" VerticalAlignment="Top" Width="438" FontWeight="ExtraBold" Foreground="#FFF5F2F2"></TextBlock>
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,60,0,0" Name="txtVersion" VerticalAlignment="Top" Width="438" Text="Version" FontWeight="ExtraBold" Foreground="#FFF5F2F2"></TextBlock>
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,114,0,0" Name="txtCopyright" Text="Copyright" VerticalAlignment="Top" Width="438" FontWeight="ExtraBold" Foreground="#FFDEABAB"></TextBlock>
-            <TextBlock Height="30" Margin="12,176,6,0" Name="txtCompanyName" Text="Company Name" VerticalAlignment="Top" FontWeight="ExtraBold" Foreground="Black"></TextBlock>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="212,6,0,0" Name="txtAppName" Text="Product Name" VerticalAlignment="Top" Width="438" FontWeight="ExtraBold"></TextBlock>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="212,60,0,0" Name="txtVersion" VerticalAlignment="Top" Width="438" Text="Version" FontWeight="ExtraBold"></TextBlock>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="212,114,0,0" Name="txtCopyright" Text="Copyright" VerticalAlignment="Top" Width="438" FontWeight="ExtraBold"></TextBlock>
+            <TextBlock Height="30" Margin="212,176,-194,0" Name="txtCompanyName" Text="Company Name" VerticalAlignment="Top" FontWeight="ExtraBold"></TextBlock>
+            <Image Height="200" HorizontalAlignment="Left" Margin="6,6,0,0" Name="Image1" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/French%20Conjugator;component/MTNSoftwareLogo.png" />
         </Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Images/MTNSoftwareLogo.png" />
-        </Grid.Background>
     </Grid>
 
     <phone:PhoneApplicationPage.ApplicationBar>

@@ -10,8 +10,8 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
-    shell:SystemTray.IsVisible="True" Name="pageIrregular">
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" Name="pageIrregular" xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
 
     <phone:PhoneApplicationPage.Resources>
         <LinearGradientBrush x:Key="Foreground1" EndPoint="1,0.5" StartPoint="0,0.5">
@@ -22,6 +22,9 @@
     
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
+    	<VisualStateManager.VisualStateGroups>
+    		<VisualStateGroup x:Name="VisualStateGroup"/>
+    	</VisualStateManager.VisualStateGroups>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -34,14 +37,36 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ListBox Height="500" HorizontalAlignment="Left" Margin="0,6,0,0" Name="listIrregularVerbs" VerticalAlignment="Top" Width="450" FontSize="24" BorderThickness="0">
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listAller" VerticalAlignment="Top" Content="aller" BorderThickness="3" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listAppeller" VerticalAlignment="Top" Content="appeller" BorderThickness="3" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listAvoir" VerticalAlignment="Top" Content="avoir" BorderThickness="3" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listConduire" VerticalAlignment="Top" Content="conduire" BorderThickness="3" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listCourir" VerticalAlignment="Top" Content="courir" BorderThickness="3" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listDire" VerticalAlignment="Top" Content="dire" BorderThickness="3" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listDormir" VerticalAlignment="Top" Content="dormir" BorderThickness="3" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listEtre" VerticalAlignment="Top" Content="être" Width="100" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listFaire" VerticalAlignment="Top" Width="100" Content="faire" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listMettre" VerticalAlignment="Top" Width="100" Content="mettre" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}"/>
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listPartir" VerticalAlignment="Top" Width="100" Content="partir" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}"/>
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listPreferer" VerticalAlignment="Top" Width="100" Content="préférer" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}"/>
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listPrendre" VerticalAlignment="Top" Width="100" Content="prendre" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listRire" VerticalAlignment="Top" Width="100" Content="rire" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}"/>
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listSortir" VerticalAlignment="Top" Width="100" Content="sortir" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}"/>
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listTraduire" VerticalAlignment="Top" Width="100" Content="traduire" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}"/>
+
+            </ListBox>
+            <Button x:Name="btnBack" Height="72" Margin="0,0,296,0" VerticalAlignment="Bottom" Content="Back" Width="160" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+            <Button Content="Regular" Height="72" HorizontalAlignment="Left" Margin="296,535,0,0" Name="btnUseRegularVerbs" VerticalAlignment="Top" Width="160" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+        </Grid>
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->
-    <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" x:Name="mnuAppBar">
+    <!--  phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" x:Name="mnuAppBar" Opacity="0.5">
             <shell:ApplicationBarIconButton IconUri="/Images/appbar.back.rest.png" Text="Back" x:Name="mnuBack" />
         </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar-->
 
 </phone:PhoneApplicationPage>

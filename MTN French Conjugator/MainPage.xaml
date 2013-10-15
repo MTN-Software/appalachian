@@ -38,11 +38,8 @@
             <TextBox Height="72" HorizontalAlignment="Left" Margin="12,6,0,0" Name="txtVerb" Text="Enter verb here" VerticalAlignment="Top" Width="438" BorderThickness="0" AcceptsReturn="False" />
             <RadioButton Content="Past" Height="72" HorizontalAlignment="Left" Margin="12,84,0,0" Name="radioPast" VerticalAlignment="Top" Background="{StaticResource Foreground1}" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
             <RadioButton Content="Present" Height="72" HorizontalAlignment="Right" Margin="0,84,0,0" Name="radioPresent" VerticalAlignment="Top" IsChecked="True" Background="{StaticResource Foreground1}" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
-            <Button Content="- Er" Height="72" HorizontalAlignment="Left" Margin="0,347,0,0" Name="btnEr" VerticalAlignment="Top" Width="160" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" Click="erOnClick" />
-            <Button Content="- Re" Height="72" HorizontalAlignment="Left" Margin="296,347,0,0" Name="btnRe" VerticalAlignment="Top" Width="160" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
-            <Button Content="- Ir" Height="72" HorizontalAlignment="Left" Margin="0,425,0,0" Name="btnIr" VerticalAlignment="Top" Width="160" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
-            <Button Content="Irregular" Height="72" HorizontalAlignment="Right" Margin="0,425,0,0" Name="btnIrregular" VerticalAlignment="Top" Width="160" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
-            <ListBox Height="179" HorizontalAlignment="Left" Margin="0,162,0,0" Name="ListBox1" VerticalAlignment="Top" Width="456" BorderThickness="3" BorderBrush="{StaticResource Foreground1}" RenderTransformOrigin="0.5,0.5">
+            <Button Content="Irregular" Height="72" HorizontalAlignment="Right" Margin="0,457,0,0" Name="btnIrregular" VerticalAlignment="Top" Width="170" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+            <ListBox Height="261" HorizontalAlignment="Left" Margin="0,162,0,0" Name="ListBox1" VerticalAlignment="Top" Width="456" BorderThickness="3" BorderBrush="{StaticResource Foreground1}" RenderTransformOrigin="0.5,0.5">
                 <ListBoxItem Content="Je" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listJe" FontSize="26" />
                 <ListBoxItem Content="Tu" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listTu" FontSize="26" />
                 <ListBoxItem Content="Elle/Il/On" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="ListElle" FontSize="26" />
@@ -50,6 +47,7 @@
                 <ListBoxItem Content="Vous" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listVous" FontSize="26" />
                 <ListBoxItem Content="Elles/Ils" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listElles" FontSize="26" />
             </ListBox>
+            <Button Content="Conjugate" Height="72" HorizontalAlignment="Left" Margin="0,457,0,0" Name="btnConjugate" VerticalAlignment="Top" Width="170" Foreground="{StaticResource PhoneAccentBrush}" BorderBrush="{StaticResource PhoneAccentBrush}" />
         </Grid>
     </Grid>
  

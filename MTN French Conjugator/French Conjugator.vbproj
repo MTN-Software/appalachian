@@ -62,6 +62,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -96,6 +97,7 @@
     <Compile Include="App.xaml.vb">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IrregularVerbs.vb" />
     <Compile Include="MainPage.xaml.vb">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -103,12 +105,14 @@
     <Compile Include="IrregularVerbPage.xaml.vb">
       <DependentUpon>IrregularVerbPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RegularVerbs.vb" />
     <Compile Include="ReportPage.xaml.vb">
       <DependentUpon>ReportPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SuggestPage.xaml.vb">
       <DependentUpon>SuggestPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VerbAndSubjectVals.vb" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -152,7 +156,8 @@
     <Content Include="Images\appbar.overflowdots.png" />
     <Content Include="Images\appbar.questionmark.rest.png" />
     <Content Include="Images\appbar.refresh.rest.png" />
-    <Content Include="Images\MTNSoftwareLogo.png" />
+    <Resource Include="Images\MTNSoftwareLogo.png" />
+    <Resource Include="MTNSoftwareLogo.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
