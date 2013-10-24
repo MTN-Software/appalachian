@@ -1,4 +1,9 @@
-﻿Partial Public Class App
+'Program:       MTN French Conjugator
+'Desc:          Conjugates verbs.
+'Programmer:    Thomas Maloney﻿
+
+
+Partial Public Class App
     Inherits Application
 
     ''' <summary>
