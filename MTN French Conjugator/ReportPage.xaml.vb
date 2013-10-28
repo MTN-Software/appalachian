@@ -14,7 +14,7 @@ Partial Public Class ReportPage
     Private Sub btnSendReport_Click(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles btnSendReport.Click
         Dim emailcomposer = New EmailComposeTask() With { _
             .To = String.Concat("mailto:", "ThomasTNF@live.com"), _
-            .Subject = "Bug Report", _
+            .Subject = "Bug Report (French Conjugator)", _
             .Body = txtReport.Text _
         }
 

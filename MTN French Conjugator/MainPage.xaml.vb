@@ -4,9 +4,6 @@ Imports French_Conjugator.IrregularVerbsvb
 Imports French_Conjugator.RegularVerbs
 
 
-
-
-
 Partial Public Class MainPage
     Inherits PhoneApplicationPage
 
@@ -15,7 +12,13 @@ Partial Public Class MainPage
         InitializeComponent()
     End Sub
 
+    Private strTextbox As String
     Private intSubject As Integer
+
+    Private Sub MainPage_Loaded(sender As Object, e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
+        txtVerb.Text = "Enter Verb Here"
+        txtCurrentVerb.Text = "Enter Verb"
+    End Sub
 
     Private Sub radioPast_Checked(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles radioPast.Checked
         MessageBox.Show("This feature will be included in a future update.", "Coming Soon", MessageBoxButton.OK)
@@ -24,13 +27,6 @@ Partial Public Class MainPage
 
     Private Sub txtVerb_GotFocus(sender As Object, e As System.Windows.RoutedEventArgs) Handles txtVerb.GotFocus
         txtVerb.Text = String.Empty
-    End Sub
-
-
-
-    Private Sub btnIrregular_Click(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles btnIrregular.Click
-        'MessageBox.Show("This feature, like a few others, will be included in future updates", "Coming Soon", MessageBoxButton.OK)
-        NavigationService.Navigate(New Uri("/IrregularVerbPage.xaml", UriKind.Relative))
     End Sub
 
     Public Sub mnuAbout_Click(sender As Object, e As System.EventArgs) Handles mnuAbout.Click
@@ -58,79 +54,83 @@ Partial Public Class MainPage
 
 
     Private Sub btnConjugate_Click(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles btnConjugate.Click
+
         If (blnIsIrregular = True) Then
-            If (intVerb = 1) Then
-                txtVerb.Text = Irregular.strAller(intSubject)
+            Select Case intVerb
+                Case 1
+                    txtVerb.Text = Irregular.strAller(intSubject)
 
-            ElseIf (intVerb = 2) Then
-                txtVerb.Text = Irregular.strAppeler(intSubject)
+                Case 2
+                    txtVerb.Text = Irregular.strAppeler(intSubject)
 
-            ElseIf (intVerb = 3) Then
-                txtVerb.Text = Irregular.strAvoir(intSubject)
+                Case 3
+                    txtVerb.Text = Irregular.strAvoir(intSubject)
 
-            ElseIf (intVerb = 4) Then
-                txtVerb.Text = Irregular.strConduire(intSubject)
+                Case 4
+                    txtVerb.Text = Irregular.strConduire(intSubject)
 
-            ElseIf (intVerb = 5) Then
-                txtVerb.Text = Irregular.strCourir(intSubject)
+                Case 5
+                    txtVerb.Text = Irregular.strCourir(intSubject)
 
-            ElseIf (intVerb = 6) Then
-                txtVerb.Text = Irregular.strDire(intSubject)
+                Case 6
+                    txtVerb.Text = Irregular.strDire(intSubject)
 
-            ElseIf (intVerb = 7) Then
-                txtVerb.Text = Irregular.strDormir(intSubject)
+                Case 7
+                    txtVerb.Text = Irregular.strDormir(intSubject)
 
-            ElseIf (intVerb = 8) Then
-                txtVerb.Text = Irregular.strEtre(intSubject)
+                Case 8
+                    txtVerb.Text = Irregular.strEtre(intSubject)
 
-            ElseIf (intVerb = 9) Then
-                txtVerb.Text = Irregular.strFaire(intSubject)
+                Case 9
+                    txtVerb.Text = Irregular.strFaire(intSubject)
 
-            ElseIf (intVerb = 10) Then
-                txtVerb.Text = Irregular.strMettre(intSubject)
+                Case 10
+                    txtVerb.Text = Irregular.strMettre(intSubject)
 
-            ElseIf (intVerb = 11) Then
-                txtVerb.Text = Irregular.strPartir(intSubject)
+                Case 11
+                    txtVerb.Text = Irregular.strPartir(intSubject)
 
-            ElseIf (intVerb = 12) Then
-                txtVerb.Text = Irregular.strPrefere(intSubject)
+                Case 12
+                    txtVerb.Text = Irregular.strPrefere(intSubject)
 
-            ElseIf (intVerb = 13) Then
-                txtVerb.Text = Irregular.strPrendre(intSubject)
+                Case 13
+                    txtVerb.Text = Irregular.strPrendre(intSubject)
 
-            ElseIf (intVerb = 14) Then
-                txtVerb.Text = Irregular.strRire(intSubject)
+                Case 14
+                    txtVerb.Text = Irregular.strRire(intSubject)
 
-            ElseIf (intVerb = 15) Then
-                txtVerb.Text = Irregular.strSortir(intSubject)
+                Case 15
+                    txtVerb.Text = Irregular.strSortir(intSubject)
 
-            ElseIf (intVerb = 16) Then
-                txtVerb.Text = Irregular.strTraduire(intSubject)
+                Case 16
+                    txtVerb.Text = Irregular.strTraduire(intSubject)
 
-            Else
-                txtVerb.Text = "Error: No Verb Selected"
-            End If
+                Case Else
+                    txtVerb.Text = "Error: No Verb Selected"
+
+            End Select
+
+
 
 
         Else
-            Dim intVerbLength As Integer = txtVerb.Text.Length
+            Dim intVerbLength As Integer = txtCurrentVerb.Text.Length
             Dim intVerbCut As Integer = intVerbLength - 2
-            Dim strVerbType As String = txtVerb.Text.Substring(intVerbCut, 2)
-            Dim strVerbStem As String = txtVerb.Text.Substring(0, intVerbCut)
+            Dim strVerbType As String = txtCurrentVerb.Text.Substring(intVerbCut, 2)
+            Dim strVerbStem As String = txtCurrentVerb.Text.Substring(0, intVerbCut)
             strRegularVerbEnding = strVerbType
 
-            If (strVerbType = "er") Then
-                txtVerb.Text = strVerbStem & Regular.strErVerb(intSubject)
+            Select Case strVerbType
+                Case "er"
+                    txtVerb.Text = strVerbStem & Regular.strErVerb(intSubject)
+                Case "re"
+                    txtVerb.Text = strVerbStem & Regular.strReVerb(intSubject)
+                Case "ir"
+                    txtVerb.Text = strVerbStem & Regular.strIrVerb(intSubject)
+                Case Else
+                    txtVerb.Text = "Error: Unknown verb ending"
+            End Select
 
-            ElseIf (strVerbType = "re") Then
-                txtVerb.Text = strVerbStem & Regular.strReVerb(intSubject)
-
-            ElseIf (strVerbType = "ir") Then
-                txtVerb.Text = strVerbStem & Regular.strIrVerb(intSubject)
-
-            Else
-                txtVerb.Text = "Error: Unknown verb ending"
-            End If
         End If
 
 
@@ -160,63 +160,137 @@ Partial Public Class MainPage
         intSubject = 5
     End Sub
 
-    Private Sub MainPage_Loaded(sender As Object, e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
-        If (blnIsIrregular = True) Then
-            If (intVerb = 1) Then
-                txtVerb.Text = Irregular.strAller(6)
+    Private Sub listAller_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listAller.Tap
+        intVerb = 1
+        txtVerb.Text = Irregular.strIrregularVerbs(1)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(1)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 2) Then
-                txtVerb.Text = Irregular.strAppeler(6)
+    Private Sub listAppeller_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listAppeller.Tap
+        intVerb = 2
+        txtVerb.Text = Irregular.strIrregularVerbs(2)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(2)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 3) Then
-                txtVerb.Text = Irregular.strAvoir(6)
+    Private Sub listAvoir_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listAvoir.Tap
+        intVerb = 3
+        txtVerb.Text = Irregular.strIrregularVerbs(3)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(3)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 4) Then
-                txtVerb.Text = Irregular.strConduire(6)
+    Private Sub listConduire_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listConduire.Tap
+        intVerb = 4
+        txtVerb.Text = Irregular.strIrregularVerbs(4)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(4)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 5) Then
-                txtVerb.Text = Irregular.strCourir(6)
+    Private Sub listCourir_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listCourir.Tap
+        intVerb = 5
+        txtVerb.Text = Irregular.strIrregularVerbs(5)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(5)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 6) Then
-                txtVerb.Text = Irregular.strDire(6)
+    Private Sub listDire_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listDire.Tap
+        intVerb = 6
+        txtVerb.Text = Irregular.strIrregularVerbs(6)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(6)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 7) Then
-                txtVerb.Text = Irregular.strDormir(6)
+    Private Sub listDormir_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listDormir.Tap
+        intVerb = 7
+        txtVerb.Text = Irregular.strIrregularVerbs(7)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(7)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 8) Then
-                txtVerb.Text = Irregular.strEtre(6)
+    Private Sub listEtre_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listEtre.Tap
+        intVerb = 8
+        txtVerb.Text = Irregular.strIrregularVerbs(8)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(8)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 9) Then
-                txtVerb.Text = Irregular.strFaire(6)
+    Private Sub listFaire_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listFaire.Tap
+        intVerb = 9
+        txtVerb.Text = Irregular.strIrregularVerbs(9)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(9)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 10) Then
-                txtVerb.Text = Irregular.strMettre(6)
+    Private Sub listMettre_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listMettre.Tap
+        intVerb = 10
+        txtVerb.Text = Irregular.strIrregularVerbs(10)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(10)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 11) Then
-                txtVerb.Text = Irregular.strPartir(6)
+    Private Sub listPartir_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listPartir.Tap
+        intVerb = 11
+        txtVerb.Text = Irregular.strIrregularVerbs(11)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(11)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 12) Then
-                txtVerb.Text = Irregular.strPrefere(6)
+    Private Sub listPreferer_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listPreferer.Tap
+        intVerb = 12
+        txtVerb.Text = Irregular.strIrregularVerbs(12)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(12)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 13) Then
-                txtVerb.Text = Irregular.strPrendre(6)
+    Private Sub listPrendre_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listPrendre.Tap
+        intVerb = 13
+        txtVerb.Text = Irregular.strIrregularVerbs(13)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(13)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 14) Then
-                txtVerb.Text = Irregular.strRire(6)
+    Private Sub listRire_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listRire.Tap
+        intVerb = 14
+        txtVerb.Text = Irregular.strIrregularVerbs(14)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(14)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 15) Then
-                txtVerb.Text = Irregular.strSortir(6)
+    Private Sub listSortir_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listSortir.Tap
+        intVerb = 15
+        txtVerb.Text = Irregular.strIrregularVerbs(15)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(15)
+        blnIsIrregular = True
+    End Sub
 
-            ElseIf (intVerb = 16) Then
-                txtVerb.Text = Irregular.strTraduire(6)
+    Private Sub listTraduire_Tap(sender As Object, e As System.Windows.Input.GestureEventArgs) Handles listTraduire.Tap
+        intVerb = 16
+        txtVerb.Text = Irregular.strIrregularVerbs(16)
+        txtCurrentVerb.Text = Irregular.strIrregularVerbs(16)
+        blnIsIrregular = True
+    End Sub
 
-            Else
-                txtVerb.Text = "Error: No Verb Selected"
 
-            End If
+    Private Sub chkIsIrregular_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles chkIsIrregular.Click
+        If (chkIsIrregular.IsChecked = True) Then
+            listIrregularVerbs.IsEnabled = True
         Else
-            txtVerb.Text = "Enter Verb Here"
+            listIrregularVerbs.IsEnabled = False
+            blnIsIrregular = False
+
         End If
+    End Sub
+
+    Private Sub txtVerb_LostFocus(sender As Object, e As System.Windows.RoutedEventArgs) Handles txtVerb.LostFocus
+        strTextbox = txtVerb.Text
+        Select Case strTextbox.Length
+            Case 0 To 2
+                txtCurrentVerb.Text = "None"
+            Case Else
+                txtCurrentVerb.Text = strTextbox
+        End Select
 
     End Sub
 End Class

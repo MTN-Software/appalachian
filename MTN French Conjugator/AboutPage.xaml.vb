@@ -7,7 +7,7 @@
 
     Private Sub AboutPage_Loaded(sender As Object, e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
         txtAppName.Text = "French Conjugator"
-        txtVersion.Text = "1.1.0"
+        txtVersion.Text = "1.1.4"
         txtCopyright.Text = "Copyright © MTN Software 2013"
         txtCompanyName.Text = "MTN Software"
     End Sub

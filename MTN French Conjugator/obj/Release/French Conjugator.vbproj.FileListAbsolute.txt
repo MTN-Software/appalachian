@@ -15,7 +15,6 @@ C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Co
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\French Conjugator.xml
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\French Conjugator.pdb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\XapCacheFile.xml
-C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Release\IrregularVerbPage.g.i.vb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\Microsoft.Phone.Controls.Toolkit.pdb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Release\Microsoft.Phone.Controls.Toolkit.xml

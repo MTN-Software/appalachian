@@ -18,8 +18,15 @@
             <GradientStop Color="Red" Offset="0" />
             <GradientStop Color="#FF697FF2" Offset="1" />
         </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="Foreground2" EndPoint="0,0.5" StartPoint="1,0.5">
+            <GradientStop Color="Red" Offset="0" />
+            <GradientStop Color="#FF697FF2" Offset="1" />
+        </LinearGradientBrush>
     </phone:PhoneApplicationPage.Resources>
-    
+
+  
+
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
@@ -35,25 +42,45 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="12,6,0,0" Name="txtVerb" Text="Enter verb here" VerticalAlignment="Top" Width="438" BorderThickness="0" AcceptsReturn="False" />
-            <RadioButton Content="Past" Height="72" HorizontalAlignment="Left" Margin="12,84,0,0" Name="radioPast" VerticalAlignment="Top" Background="{StaticResource Foreground1}" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
-            <RadioButton Content="Present" Height="72" HorizontalAlignment="Right" Margin="0,84,0,0" Name="radioPresent" VerticalAlignment="Top" IsChecked="True" Background="{StaticResource Foreground1}" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
-            <Button Content="Irregular" Height="72" HorizontalAlignment="Right" Margin="0,457,0,0" Name="btnIrregular" VerticalAlignment="Top" Width="170" BorderThickness="3" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
-            <ListBox Height="261" HorizontalAlignment="Left" Margin="0,162,0,0" Name="ListBox1" VerticalAlignment="Top" Width="456" BorderThickness="3" BorderBrush="{StaticResource Foreground1}" RenderTransformOrigin="0.5,0.5">
-                <ListBoxItem Content="Je" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listJe" FontSize="26" />
-                <ListBoxItem Content="Tu" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listTu" FontSize="26" />
-                <ListBoxItem Content="Elle/Il/On" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="ListElle" FontSize="26" />
-                <ListBoxItem Content="Nous" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listNous" FontSize="26" />
-                <ListBoxItem Content="Vous" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listVous" FontSize="26" />
-                <ListBoxItem Content="Elles/Ils" Foreground="{StaticResource Foreground1}" BorderThickness="3" Name="listElles" FontSize="26" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="-12,6,0,0" Name="txtVerb" Text="Enter verb here" VerticalAlignment="Top" Width="480" BorderThickness="0" AcceptsReturn="True" />
+            <RadioButton Content="Past" Height="72" HorizontalAlignment="Left" Margin="-12,84,0,0" Name="radioPast" VerticalAlignment="Top" Background="{StaticResource Foreground1}" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+            <RadioButton Content="Present" Height="72" HorizontalAlignment="Right" Margin="0,84,5,0" Name="radioPresent" VerticalAlignment="Top" IsChecked="True" Background="{StaticResource Foreground1}" BorderBrush="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" />
+            <ListBox Height="261" HorizontalAlignment="Left" Margin="0,162,0,0" Name="ListBox1" VerticalAlignment="Top" Width="222" BorderThickness="3" BorderBrush="{StaticResource Foreground1}" RenderTransformOrigin="0.5,0.5">
+                <ListBoxItem Content="Je" BorderThickness="3" Name="listJe" FontSize="26" Margin="10,26,0,0" />
+                <ListBoxItem Content="Tu" BorderThickness="3" Name="listTu" FontSize="26" Margin="10,26,0,0" />
+                <ListBoxItem Content="Elle/Il/On" BorderThickness="3" Name="ListElle" FontSize="26" Margin="10,26,0,0" />
+                <ListBoxItem Content="Nous" BorderThickness="3" Name="listNous" FontSize="26" Margin="10,26,0,0" />
+                <ListBoxItem Content="Vous" BorderThickness="3" Name="listVous" FontSize="26" Margin="10,26,0,0" />
+                <ListBoxItem Content="Elles/Ils" BorderThickness="3" Name="listElles" FontSize="26" Margin="10,26,0,0" />
             </ListBox>
-            <Button Content="Conjugate" Height="72" HorizontalAlignment="Left" Margin="0,457,0,0" Name="btnConjugate" VerticalAlignment="Top" Width="170" Foreground="{StaticResource PhoneAccentBrush}" BorderBrush="{StaticResource PhoneAccentBrush}" />
+            
+            <Button Content="Conjugate" Height="72" HorizontalAlignment="Left" Margin="-12,429,0,0" Name="btnConjugate" VerticalAlignment="Top" Width="480" Foreground="{StaticResource PhoneAccentBrush}" BorderBrush="{StaticResource PhoneAccentBrush}" />
+            <ListBox Height="261" HorizontalAlignment="Left" Margin="229,162,0,0" Name="listIrregularVerbs" VerticalAlignment="Top" Width="222" FontSize="24" BorderThickness="3" BorderBrush="{StaticResource Foreground2}" IsEnabled="False">
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listAller" VerticalAlignment="Top" Content="aller" BorderThickness="0" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listAppeller" VerticalAlignment="Top" Content="appeller" BorderThickness="0" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listAvoir" VerticalAlignment="Top" Content="avoir" BorderThickness="0" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listConduire" VerticalAlignment="Top" Content="conduire" BorderThickness="0" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listCourir" VerticalAlignment="Top" Content="courir" BorderThickness="0" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listDire" VerticalAlignment="Top" Content="dire" BorderThickness="0" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem HorizontalAlignment="Left" Margin="10,26,0,0" Name="listDormir" VerticalAlignment="Top" Content="dormir" BorderThickness="0" Width="100" Height="50" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listEtre" VerticalAlignment="Top" Content="être" Width="100" BorderThickness="0" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listFaire" VerticalAlignment="Top" Width="100" Content="faire" BorderThickness="0" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listMettre" VerticalAlignment="Top" Width="100" Content="mettre" BorderThickness="0" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listPartir" VerticalAlignment="Top" Width="100" Content="partir" BorderThickness="0" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listPreferer" VerticalAlignment="Top" Width="100" Content="préférer" BorderThickness="0" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listPrendre" VerticalAlignment="Top" Width="100" Content="prendre" BorderThickness="0" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listRire" VerticalAlignment="Top" Width="100" Content="rire" BorderThickness="0" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listSortir" VerticalAlignment="Top" Width="100" Content="sortir" BorderThickness="0" BorderBrush="{StaticResource PhoneAccentBrush}" />
+                <ListBoxItem Height="50" HorizontalAlignment="Left" Margin="10,26,0,0" Name="listTraduire" VerticalAlignment="Top" Width="100" Content="traduire" BorderThickness="0" BorderBrush="{StaticResource PhoneAccentBrush}" />
+            </ListBox>
+            <CheckBox Content="Is Irregular" Height="72" Margin="122,84,154,0" Name="chkIsIrregular" VerticalAlignment="Top" Foreground="{StaticResource PhoneAccentBrush}" Padding="0" />
         </Grid>
+        <TextBlock Grid.RowSpan="2" Height="30" HorizontalAlignment="Left" Margin="238,146,0,0" Name="txtCurrentVerb" Text="" VerticalAlignment="Top" Width="231" TextAlignment="Right" />
+        <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,145,0,0" Name="txtCurrentVerbLable" Text="Current Verb:" TextAlignment="Left" VerticalAlignment="Top" Width="121" Grid.RowSpan="2" />
     </Grid>
- 
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" x:Name="appBar" Opacity="0.5" BackgroundColor="#00000000">
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" x:Name="appBar" Opacity="0.8" BackgroundColor="{StaticResource PhoneAccentColor}" ForegroundColor="White">
             <shell:ApplicationBarIconButton IconUri="/Images/appbar.questionmark.rest.png" Text="Help" Click="btnHelp_Click" x:Name="btnHelp" />
             <shell:ApplicationBarIconButton IconUri="/Images/appbar.refresh.rest.png" Text="Refresh" x:Name="btnRefresh" />
             <shell:ApplicationBar.MenuItems>

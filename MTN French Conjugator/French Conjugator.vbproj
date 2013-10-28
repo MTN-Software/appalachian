@@ -102,9 +102,6 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="IrregularVerbPage.xaml.vb">
-      <DependentUpon>IrregularVerbPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="RegularVerbs.vb" />
     <Compile Include="ReportPage.xaml.vb">
       <DependentUpon>ReportPage.xaml</DependentUpon>
@@ -124,10 +121,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="IrregularVerbPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

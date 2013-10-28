@@ -70,6 +70,15 @@
                                                 "préfère", "préférons", _
                                                 "préférez", "préfèrent", _
                                                 "préfèrer"}
+
+
+        Public Shared strIrregularVerbs() As String = {"IrregularVerbs", "aller", "appeller", "avoir", _
+                                                       "conduire", "courir", "dire", _
+                                                       "dormir", "être", "faire", _
+                                                       "mettre", "partir", "préférer", _
+                                                       "prendre", "rire", "sortir", _
+                                                       "traduire"}
+
     End Structure
 
 End Class

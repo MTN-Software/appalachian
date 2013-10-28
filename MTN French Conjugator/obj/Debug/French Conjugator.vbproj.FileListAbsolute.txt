@@ -13,9 +13,9 @@ c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Co
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\App.g.i.vb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\AboutPage.g.i.vb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\MainPage.g.i.vb
-C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\IrregularVerbPage.g.i.vb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\ReportPage.g.i.vb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\SuggestPage.g.i.vb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\French Conjugator.vbprojResolveAssemblyReference.cache
