@@ -1,0 +1,14 @@
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\Bin\Debug\ApplicationIcon.png
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\Bin\Debug\Background.png
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\Bin\Debug\Spanish Conjugator.dll
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\Bin\Debug\Spanish Conjugator.pdb
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\Bin\Debug\Spanish Conjugator.xml
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\Bin\Debug\AppManifest.xaml
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\Bin\Debug\Spanish_Conjugator.xap
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\obj\Debug\App.g.i.vb
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\obj\Debug\MainPage.g.i.vb
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\obj\Debug\Spanish Conjugator.g.resources
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\obj\Debug\Spanish Conjugator.dll
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\obj\Debug\Spanish Conjugator.xml
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\obj\Debug\Spanish Conjugator.pdb
+c:\users\thomas\documents\visual studio 2010\Projects\Spanish Conjugator\Spanish Conjugator\obj\Debug\XapCacheFile.xml
