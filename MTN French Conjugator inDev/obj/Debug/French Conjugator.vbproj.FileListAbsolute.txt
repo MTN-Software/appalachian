@@ -1,0 +1,21 @@
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\ApplicationIcon.png
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Background.png
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\French Conjugator.dll
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\French Conjugator.pdb
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\French Conjugator.xml
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\AppManifest.xaml
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\French_Conjugator.xap
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\French Conjugator.g.resources
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\French Conjugator.dll
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\French Conjugator.xml
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\French Conjugator.pdb
+c:\users\thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\XapCacheFile.xml
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\App.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\AboutPage.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\MainPage.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\ReportPage.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\SuggestPage.g.i.vb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\French Conjugator.vbprojResolveAssemblyReference.cache
