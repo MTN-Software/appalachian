@@ -19,7 +19,6 @@ Public Class VerbTenses
                                                  "étiez", "étaient"}
 
         Public Shared Sub ImperfectPast_Conj(intVerbIn As Integer)
-            Dim intVerbCut As Integer
 
             If (blnIsIrregular = True) Then
                 Select Case intVerbIn
@@ -140,31 +139,30 @@ Public Class VerbTenses
                 Dim intVerbLength As Integer = strCurrentVerb.Length
                 ' Check if verb has a 'g' before the verb ending
                 Dim intCheck As Integer = intVerbLength - 3
+                intVerbCut = intVerbLength - 2
                 Dim strVerbType As String = strCurrentVerb.Substring(intVerbCut, 2)
                 ' Actually check this time
                 Dim strCheck As String = strCurrentVerb.Substring(intCheck, 3)
                 Dim strVerbStem As String = strCurrentVerb.Substring(0, intVerbCut)
+                strNverbStem = strCurrentVerb.Substring(0, intVerbCut)
+
+
 
                 strRegularVerbEnding = strVerbType
-                If (intSubject = 3) Then
+                If ((intSubject = 3) Or (intSubject = 4)) Then
+
                     If (strCheck.First <> "g") Then
-                        strSTDNous = strCurrentVerb
-                        intVerbCut = ((strSTDNous.Length) - 3)
-                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strSTDNousStem = strNverbStem
                         strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
                         strVerb = strIPVerbConj
                     Else
-                        strSTDNous = strCurrentVerb
-                        intVerbCut = ((strSTDNous.Length) - 3)
-                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
-                        strIPVerbConj = strSTDNousStem & "ge" & IPVerbs.strIPVerb(intSubject)
+                        strSTDNousStem = strNverbStem
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
                         strVerb = strIPVerbConj
                     End If
                 Else
-                    strSTDNous = strCurrentVerb
-                    intVerbCut = ((strSTDNous.Length) - 3)
-                    strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
-                    strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                    strSTDNousStem = strNverbStem
+                    strIPVerbConj = strSTDNousStem & "e" & IPVerbs.strIPVerb(intSubject)
                     strVerb = strIPVerbConj
                 End If
                 
@@ -238,11 +236,12 @@ Public Class VerbTenses
             Dim intVerbLength As Integer = strCurrentVerb.Length
             ' Check if verb has a 'g' before the verb ending
             Dim intCheck As Integer = intVerbLength - 3
-            Dim intVerbCut As Integer = intVerbLength - 2
+            intVerbCut = intVerbLength - 2
             Dim strVerbType As String = strCurrentVerb.Substring(intVerbCut, 2)
             ' Actually check this time
             Dim strCheck As String = strCurrentVerb.Substring(intCheck, 3)
             Dim strVerbStem As String = strCurrentVerb.Substring(0, intVerbCut)
+            strNverbStem = strCurrentVerb.Substring(0, intVerbCut)
 
             strRegularVerbEnding = strVerbType
             If (intSubject = 3) Then
@@ -250,21 +249,27 @@ Public Class VerbTenses
                     Select Case strVerbType
                         Case "er"
                             strVerb = strVerbStem & Regular.strErVerb(intSubject)
+                            strNverbStem = strVerb.Substring(0, intCheck)
                         Case "re"
                             strVerb = strVerbStem & Regular.strReVerb(intSubject)
+                            strNverbStem = strVerb.Substring(0, intCheck)
                         Case "ir"
                             strVerb = strVerbStem & Regular.strIrVerb(intSubject)
+                            strNverbStem = strVerb.Substring(0, intCheck)
                         Case Else
                             strVerb = "Error: Unknown verb ending"
                     End Select
                 Else
                     Select Case strVerbType
                         Case "er"
-                            strVerb = strVerbStem & "e" & Regular.strErVerb(intSubject)
+                            strVerb = strNverbStem & "e" & Regular.strErVerb(intSubject)
+                            strNverbStem = strVerb.Substring(0, intCheck)
                         Case "re"
-                            strVerb = strVerbStem & "e" & Regular.strReVerb(intSubject)
+                            strVerb = strNverbStem & "e" & Regular.strReVerb(intSubject)
+                            strNverbStem = strVerb.Substring(0, intCheck)
                         Case "ir"
-                            strVerb = strVerbStem & "e" & Regular.strIrVerb(intSubject)
+                            strVerb = strNverbStem & "e" & Regular.strIrVerb(intSubject)
+                            strNverbStem = strVerb.Substring(0, intCheck)
                         Case Else
                             strVerb = "Error: Unknown verb ending"
                     End Select

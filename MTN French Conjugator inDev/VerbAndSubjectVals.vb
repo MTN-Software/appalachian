@@ -15,6 +15,7 @@ Public Class VerbAndSubjectVals
     Public Shared strSTDNous As String
     Public Shared strSTDNousStem As String
     Public Shared strIPVerbConj As String
-
+    Public Shared strNverbStem As String
+    Public Shared intVerbCut As Integer
 
 End Class
