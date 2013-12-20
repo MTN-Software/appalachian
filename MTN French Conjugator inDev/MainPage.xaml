@@ -44,9 +44,8 @@
         
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="-12,6,0,0" Name="txtVerb" Text="Enter verb here" VerticalAlignment="Top" Width="480" BorderThickness="0" AcceptsReturn="True" />
-
-   
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="-12,6,0,0" Name="txtVerb" Text="Enter verb here" VerticalAlignment="Top" Width="480" BorderThickness="0">
+            </TextBox>
             <ListBox Height="261" HorizontalAlignment="Left" Margin="0,162,0,0" Name="listSubject" VerticalAlignment="Top" Width="222" BorderThickness="3" BorderBrush="{StaticResource Foreground1}" RenderTransformOrigin="0.5,0.5">
                 <ListBoxItem Content="Je" BorderThickness="3" Name="listJe" FontSize="26" Margin="10,26,0,0" IsSelected="True" />
                 <ListBoxItem Content="Tu" BorderThickness="3" Name="listTu" FontSize="26" Margin="10,26,0,0" />
@@ -59,7 +58,7 @@
             <Button Content="Conjugate" Height="72" HorizontalAlignment="Left" Margin="-12,429,0,0" Name="btnConjugate" VerticalAlignment="Top" Width="480" Foreground="{StaticResource PhoneAccentBrush}" BorderBrush="{StaticResource PhoneAccentBrush}" />
             <ListBox Height="261" Margin="228,162,6,184" Name="listVerbTense" Width="222" BorderThickness="3" BorderBrush="{StaticResource Foreground2}" >
                 <ListBoxItem Content="Present"  BorderThickness="3" Margin="10,26,0,0" IsSelected="True" FontSize="26" Name="listPresent" />
-                <ListBoxItem Content="Past"  BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="listPast" IsEnabled="False" />
+                <ListBoxItem Content="Past"  BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="listPast" IsEnabled="True" />
                 <ListBoxItem Content="Imperfect Past" BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="ListImperfectPast" />
                 <ListBoxItem Content="Futur Proche"  BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="ListFuturProche" IsEnabled="False" />
                 </ListBox>

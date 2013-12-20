@@ -3,6 +3,7 @@ Imports French_Conjugator.VerbAndSubjectVals
 Imports French_Conjugator.IrregularVerbsvb
 Imports French_Conjugator.RegularVerbs
 Imports French_Conjugator.VerbTenses
+Imports Microsoft.Phone.Tasks
 
 
 
@@ -60,16 +61,19 @@ Partial Public Class MainPage
     End Sub
 
 
-    
+
 
     Private Sub btnConjugate_Click(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles btnConjugate.Click
         strVerb = txtVerb.Text
         strCurrentVerb = txtCurrentVerb.Text
         getIrregular()
+        getPCExceptions()
         If (intTense = 1) Then
             Call Present_Conj()
             txtVerb.Text = strVerb
         ElseIf (intTense = 2) Then
+            Call PC_Conj()
+            txtVerb.Text = strVerb
         ElseIf (intTense = 3) Then
             Call IPVerbs.ImperfectPast_Conj(intVerb)
             txtVerb.Text = strVerb
@@ -109,24 +113,61 @@ Partial Public Class MainPage
 
     Private Sub getIrregular()
         Dim strTempVerb As String = txtCurrentVerb.Text.ToLower
-        Dim intIndex = 1
-        Do
+        For intIndex = 1 To 16
             If (strTempVerb = Irregular.strIrregularVerbs(intIndex)) Then
                 intVerb = intIndex
                 blnIsIrregular = True
-                Exit Do
+                Exit For
             Else
                 blnIsIrregular = False
             End If
-
-            intIndex += 1
-        Loop Until intIndex = 16
-
-
+        Next
 
     End Sub
 
-   
+    Private Sub getPCExceptions()
+        Try
+
+
+            Dim strTempVerb As String = txtCurrentVerb.Text.ToLower
+            For intIndex = 0 To 43
+                If (strTempVerb = PCVerbs.strListOfIrregularPC(intIndex)) Then
+                    intPCIrregularVerb = intIndex
+                    blnIsIrregularInPC = True
+                    Exit For
+                Else
+                    blnIsIrregularInPC = False
+                End If
+            Next
+
+            For intIndexes = 0 To 17
+                If (strTempVerb = PCVerbs.strEtreInPC(intIndexes)) Then
+                    intPCEtreVerb = intIndexes
+                    blnUseEtreInPC = True
+                    Exit For
+                Else
+                    blnUseEtreInPC = False
+                End If
+            Next
+
+        Catch ex As Exception
+            Dim dlgResponce As MessageBoxResult
+            dlgResponce = MessageBox.Show("Would you like to report this?" & vbNewLine & ex.Message, _
+                            "Err... This is embarrassing.", MessageBoxButton.OKCancel)
+
+            If (dlgResponce = MessageBoxResult.OK) Then
+                Dim emailcomposer = New EmailComposeTask() With { _
+                .To = String.Concat("mailto:", "ThomasTNF@live.com"), _
+                .Subject = "Feature Suggestion", _
+                .Body = ex.Message _
+                }
+                emailcomposer.Show()
+            Else
+
+            End If
+        End Try
+    End Sub
+
 
     Private Sub txtVerb_LostFocus(sender As Object, e As System.Windows.RoutedEventArgs) Handles txtVerb.LostFocus
         strTextbox = txtVerb.Text
@@ -160,4 +201,11 @@ Partial Public Class MainPage
     End Sub
 
 
+    Private Sub txtVerb_KeyDown(sender As System.Object, e As System.Windows.Input.KeyEventArgs) Handles txtVerb.KeyDown
+        If (e.Key = Key.Enter) Then
+            pageMain.Focus()
+
+
+        End If
+    End Sub
 End Class

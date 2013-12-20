@@ -40,21 +40,13 @@
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="212,114,0,0" Name="txtCopyright" Text="Copyright" VerticalAlignment="Top" Width="438" FontWeight="ExtraBold"></TextBlock>
             <TextBlock Height="30" Margin="212,176,-194,0" Name="txtCompanyName" Text="Company Name" VerticalAlignment="Top" FontWeight="ExtraBold"></TextBlock>
             <Image Height="200" HorizontalAlignment="Left" Margin="6,6,0,0" Name="Image1" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/French%20Conjugator;component/MTNSoftwareLogo.png" />
-            <TextBlock Height="354" Margin="6,247,6,0" Name="txtDesc" Text="Description goes here" VerticalAlignment="Top" FontWeight="ExtraBold" />
+            
+            <ScrollViewer Height="360" HorizontalAlignment="Left" Margin="0,247,0,0" Name="ScrollViewer1" VerticalAlignment="Top" Width="456" >
+                <TextBlock Margin="6,0" Name="txtDesc" Text="Description goes here" VerticalAlignment="Top" FontWeight="ExtraBold" TextWrapping="Wrap" />
+            </ScrollViewer>
         </Grid>
+       
     </Grid>
-
-    <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" x:Name="appBar" Opacity="0.795" BackgroundColor="{StaticResource PhoneAccentColor}" ForegroundColor="White">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar.questionmark.rest.png" Text="Help" Click="btnHelp_Click" x:Name="btnHelp" />
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar.refresh.rest.png" Text="Refresh" x:Name="btnRefresh" />
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="Report a bug" Click="mnuReport_Click" x:Name="mnuReport" />
-                <shell:ApplicationBarMenuItem Text="Suggest a feature" Click="mnuSuggest_Click" x:Name="mnuSuggest" />
-                <shell:ApplicationBarMenuItem Text="About" Click="mnuAbout_Click" x:Name="mnuAbout" />
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>
 
 
 </phone:PhoneApplicationPage>

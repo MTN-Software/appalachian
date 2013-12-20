@@ -11,7 +11,7 @@
                                               "ont", "avoir"}
 
         Public Shared strEtre() As String = {"suis", "es", "est", _
-                                             "sommes", "être", _
+                                             "sommes", "êtes", _
                                              "sont", "être"}
 
         Public Shared strAller() As String = {"vais", "vas", "va", _

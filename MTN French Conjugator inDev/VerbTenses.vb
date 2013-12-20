@@ -172,7 +172,72 @@ Public Class VerbTenses
 
     End Structure
 
-    
+    Public Structure PCVerbs        'passé composé (I should probably clean up the code soon... I'm not even using structs correctly
+        Public Shared strListOfIrregularPC() As String = {"acquérir", "apprendre", "atteindre", "attendre", "avoir", "battre", _
+                                                          "boire", "comprendre", "conduire", "connaître", "construire", "courir", _
+                                                          "couvrir", "craindre", "croire", "décevoir", "découvrir", "devoir", "dire", _
+                                                          "écrire", "être", "faire", "fondre", "instruire", "joindre", "lire", "mettre", _
+                                                          "offrir", "ouvrir", "paraître", "peindre", "pouvoir", "prendre", "produire", _
+                                                          "recevoir", "savoir", "souffrir", "surprendre", "suivre", "tenir", _
+                                                           "venir", "vivre", "voir", "vouloir"}
+
+        Public Shared strListOfIrregularPCConj() As String = {"acquis", "appris", "atteint", "attendu", "eu", "battu", "bu", "compris", _
+                                                              "conduit", "connu", "construit", "couru", "couvert", "craint", "cru", "déçu", _
+                                                              "découvert", "dû", "dit", "écrit", "été", "fait", "fondu", "instruit", "joint", _
+                                                              "lu", "mis", "offert", "ouvert", "paru", "peint", "pu", "pris", "produit", _
+                                                              "reçu", "su", "souffert", "surpris", "suivi", "tenu", "venu", "vécu", "vu", _
+                                                              "voulu"}
+
+
+        Public Shared strEtreInPC() As String = {"devenir", "revenir", "monter", "rester", "sortir", "passer", "venir", _
+                                                 "aller", "naître", "descendre", "entrer", "retourner", "tomber", "rentrer", _
+                                                 "arriver", "mourir", "partir", "décéder"}
+    End Structure
+
+    Public Shared Sub PC_Conj()
+        Dim strEtreConj As String = Irregular.strEtre(intSubject)
+        Dim strAvoirConj As String = Irregular.strAvoir(intSubject)
+
+        If (blnIsIrregularInPC = True) Then
+            Select Case intPCIrregularVerb
+                Case intPCIrregularVerb
+                    strVerb = PCVerbs.strListOfIrregularPCConj(intPCIrregularVerb)
+                Case Else
+                    strVerb = "Error: No Verb Detected"
+            End Select
+        ElseIf (blnIsIrregularInPC = False) Then
+            Dim intVerbLength As Integer = strCurrentVerb.Length
+            intVerbCut = intVerbLength - 2
+            Dim strVerbType As String = strCurrentVerb.Substring(intVerbCut, 2)
+            Dim strVerbStem As String = strCurrentVerb.Substring(0, intVerbCut)
+            Select Case strVerbType
+                Case "er"
+                    strVerb = strVerbStem & "é"
+                Case "re"
+                    strVerb = strVerbStem & "u"
+                Case "ir"
+                    strVerb = strVerbStem & "i"
+                Case Else
+                    strVerb = "Error: Unknown verb ending"
+            End Select
+        End If
+
+        If (blnUseEtreInPC = True) Then
+            strVerb = strEtreConj & " " & strVerb
+            Select Case intSubject
+                Case 2
+                    strVerb = strVerb & "(e)"
+                Case 3 To 5
+                    strVerb = strVerb & "(e)(s)"
+                Case Else
+                    strVerb = strVerb
+            End Select
+
+        ElseIf (blnUseEtreInPC = False) Then
+            strVerb = strAvoirConj & " " & strVerb
+        End If
+    End Sub
+
     Public Shared Sub Present_Conj()
         If (blnIsIrregular = True) Then
             Select Case intVerb
@@ -225,7 +290,7 @@ Public Class VerbTenses
                     strVerb = Irregular.strTraduire(intSubject)
 
                 Case Else
-                    strVerb = "Error: No Verb Selected"
+                    strVerb = "Error: No Verb Detected"
 
             End Select
 

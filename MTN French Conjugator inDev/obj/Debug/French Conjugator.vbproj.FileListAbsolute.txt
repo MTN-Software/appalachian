@@ -19,3 +19,7 @@ C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Co
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
 C:\Users\Thomas\documents\visual studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
 C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\French Conjugator.vbprojResolveAssemblyReference.cache
+C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Coding4Fun.Toolkit.Controls.dll
+C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\PageThanks.g.i.vb

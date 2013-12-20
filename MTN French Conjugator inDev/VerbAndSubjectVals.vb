@@ -6,7 +6,11 @@ Public Class VerbAndSubjectVals
     'Public data storage so I can make different pages interact together.
     Public Shared intSubject As Integer
     Public Shared intVerb As Integer
+    Public Shared intPCEtreVerb As Integer
+    Public Shared intPCIrregularVerb As Integer
     Public Shared blnIsIrregular As Boolean
+    Public Shared blnIsIrregularInPC As Boolean
+    Public Shared blnUseEtreInPC As Boolean
     Public Shared strRegularVerbEnding As String
     Public Shared intTense As Integer '1 = present, 2 = past, 3 = Imperfect Past, 4 = futur proche
     Public Shared strVerb As String
