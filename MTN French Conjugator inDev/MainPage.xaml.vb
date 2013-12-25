@@ -113,7 +113,7 @@ Partial Public Class MainPage
 
     Private Sub getIrregular()
         Dim strTempVerb As String = txtCurrentVerb.Text.ToLower
-        For intIndex = 1 To 16
+        For intIndex = 1 To Irregular.strIrregularVerbs.Length
             If (strTempVerb = Irregular.strIrregularVerbs(intIndex)) Then
                 intVerb = intIndex
                 blnIsIrregular = True

@@ -22,7 +22,9 @@ Partial Public Class AboutPage
 
     
     Private Sub currentIrregularVerbs()
-        For intVerbDisp = 1 To 16
+        Array.Sort(Irregular.strIrregularVerbs)
+        For intVerbDisp = 1 To 27
+
             txtDesc.Text = txtDesc.Text & Irregular.strIrregularVerbs(intVerbDisp) & vbNewLine & vbNewLine
 
         Next

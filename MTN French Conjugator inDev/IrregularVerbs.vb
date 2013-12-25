@@ -71,13 +71,66 @@
                                                 "préférez", "préfèrent", _
                                                 "préfèrer"}
 
+        Public Shared strAcquerir() As String = {"acquiers", "acquires", _
+                                                 "acquiert", "acquérons", _
+                                                 "acquérez", "aquièrent", _
+                                                 "acquérir"}
 
-        Public Shared strIrregularVerbs() As String = {"IrregularVerbs", "aller", "appeller", "avoir", _
-                                                       "conduire", "courir", "dire", _
+        Public Shared strApprendre() As String = {"apprends", "apprends", _
+                                                  "apprend", "apprenons", _
+                                                  "apprenez", "apprennent", _
+                                                  "apprendre"}
+
+        Public Shared strAtteindre() As String = {"atteins", "atteins", _
+                                                  "atteint", "atteignons", _
+                                                  "atteignez", "atteignent", _
+                                                  "atteindre"}
+
+        Public Shared strBattre() As String = {"bats", "bats", "bat", "battons", _
+                                               "battez", "battent", "battre"}
+
+
+        Public Shared strBoire() As String = {"bois", "bois", "boit", "buvons", _
+                                              "buvez", "boivent", "boire"}
+
+        Public Shared strComprendre() As String = {"comprends", "comprends", _
+                                                   "comprend", "comprenons", _
+                                                   "comprenez", "comprennent", _
+                                                   "comprendre"}
+
+        Public Shared strConnaitre() As String = {"connais", "connais", _
+                                                  "connaît", "connaissons", _
+                                                  "connaissez", "connaissent", _
+                                                  "connaître"}
+
+        Public Shared strConstruire() As String = {"construis", "construis", _
+                                                   "construit", "construisons", _
+                                                   "construisez", "construisent", _
+                                                   "construire"}
+
+        Public Shared strCouvrir() As String = {"couvre", "couvres", _
+                                                "couvre", "couvrons", _
+                                                "couvrez", "couvrent", _
+                                                "couvrir"}
+
+        Public Shared strCraindre() As String = {"crains", "crains", _
+                                                 "craint", "craignons", _
+                                                 "craignez", "craignent", _
+                                                 "craindre"}
+
+        Public Shared strCroire() As String = {"crois", "crois", _
+                                               "croit", "croyons", _
+                                               "croyez", "croient", _
+                                               "croire"}
+
+        Public Shared strIrregularVerbs() As String = {"IrregularVerbs", "aller", "appeller", _
+                                                        "avoir", "conduire", "courir", "dire", _
                                                        "dormir", "être", "faire", _
                                                        "mettre", "partir", "préférer", _
                                                        "prendre", "rire", "sortir", _
-                                                       "traduire"}
+                                                       "traduire", "apprendre", "atteindre", "acquérir", _
+                                                       "boire", "battre", "comprendre", "connaître", "construire", _
+                                                       "couvrir", "craindre", "croire"}
 
     End Structure
 

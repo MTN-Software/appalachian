@@ -131,6 +131,83 @@ Public Class VerbTenses
                         strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
                         strVerb = strIPVerbConj
 
+                    Case 17
+                        strSTDNous = Irregular.strApprendre(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 18
+                        strSTDNous = Irregular.strAtteindre(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 19
+                        strSTDNous = Irregular.strAcquerir(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 20
+                        strSTDNous = Irregular.strBoire(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 21
+                        strSTDNous = Irregular.strBattre(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 22
+                        strSTDNous = Irregular.strComprendre(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 23
+                        strSTDNous = Irregular.strConnaitre(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 24
+                        strSTDNous = Irregular.strConstruire(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 25
+                        strSTDNous = Irregular.strCouvrir(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 26
+                        strSTDNous = Irregular.strCraindre(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
+                    Case 27
+                        strSTDNous = Irregular.strCroire(3)
+                        intVerbCut = ((strSTDNous.Length) - 3)
+                        strSTDNousStem = strSTDNous.Substring(0, intVerbCut)
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+
                     Case Else
                         strVerb = "Error: No Verb Selected"
 
@@ -161,9 +238,15 @@ Public Class VerbTenses
                         strVerb = strIPVerbConj
                     End If
                 Else
-                    strSTDNousStem = strNverbStem
-                    strIPVerbConj = strSTDNousStem & "e" & IPVerbs.strIPVerb(intSubject)
-                    strVerb = strIPVerbConj
+                    If (strCheck.First <> "g") Then
+                        strSTDNousStem = strNverbStem
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+                    Else
+                        strSTDNousStem = strNverbStem & "e"
+                        strIPVerbConj = strSTDNousStem & IPVerbs.strIPVerb(intSubject)
+                        strVerb = strIPVerbConj
+                    End If
                 End If
                 
             End If
@@ -235,6 +318,14 @@ Public Class VerbTenses
 
         ElseIf (blnUseEtreInPC = False) Then
             strVerb = strAvoirConj & " " & strVerb
+            Select Case intSubject
+                Case 2
+                    strVerb = strVerb & "(e)"
+                Case 3 To 5
+                    strVerb = strVerb & "(e)(s)"
+                Case Else
+                    strVerb = strVerb
+            End Select
         End If
     End Sub
 
@@ -288,6 +379,39 @@ Public Class VerbTenses
 
                 Case 16
                     strVerb = Irregular.strTraduire(intSubject)
+
+                Case 17
+                    strVerb = Irregular.strApprendre(intSubject)
+
+                Case 18
+                    strVerb = Irregular.strAtteindre(intSubject)
+
+                Case 19
+                    strVerb = Irregular.strAcquerir(intSubject)
+
+                Case 20
+                    strVerb = Irregular.strBoire(intSubject)
+
+                Case 21
+                    strVerb = Irregular.strBattre(intSubject)
+
+                Case 22
+                    strVerb = Irregular.strComprendre(intSubject)
+
+                Case 23
+                    strVerb = Irregular.strConnaitre(intSubject)
+
+                Case 24
+                    strVerb = Irregular.strConstruire(intSubject)
+
+                Case 25
+                    strVerb = Irregular.strCouvrir(intSubject)
+
+                Case 26
+                    strVerb = Irregular.strCraindre(intSubject)
+
+                Case 27
+                    strVerb = Irregular.strCroire(intSubject)
 
                 Case Else
                     strVerb = "Error: No Verb Detected"
@@ -347,6 +471,8 @@ Public Class VerbTenses
                         strVerb = strVerbStem & Regular.strReVerb(intSubject)
                     Case "ir"
                         strVerb = strVerbStem & Regular.strIrVerb(intSubject)
+                    Case "ne"
+                        strVerb = "No verb has been entered."
                     Case Else
                         strVerb = "Error: Unknown verb ending"
                 End Select
