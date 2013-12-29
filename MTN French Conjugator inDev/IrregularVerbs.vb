@@ -123,14 +123,132 @@
                                                "croyez", "croient", _
                                                "croire"}
 
-        Public Shared strIrregularVerbs() As String = {"IrregularVerbs", "aller", "appeller", _
-                                                        "avoir", "conduire", "courir", "dire", _
+        Public Shared strDecevoir() As String = {"déçois", "déçois", _
+                                                 "déçoit", "décevons", _
+                                                 "décevez", "déçoivent", _
+                                                 "décevoir"}
+
+        Public Shared strDecouvrir() As String = {"découvre", "découvres", _
+                                                  "découvre", "découvrons", _
+                                                  "découvrez", "découvrent", _
+                                                  "découvrir"}
+
+        Public Shared strDevoir() As String = {"dois", "dois", _
+                                               "doit", "devons", _
+                                               "devez", "doiven", _
+                                               "devoir"}
+
+        Public Shared strEcrire() As String = {"écris", "écris", _
+                                               "écrit", "écrivons", _
+                                               "écrivez", "écrivent", _
+                                               "écrire"}
+
+        Public Shared strInstruire() As String = {"instruis", "instruis", _
+                                                  "instruit", "instruisons", _
+                                                  "instruisez", "instruisent", _
+                                                  "instruire"}
+
+        Public Shared strJoindre() As String = {"joins", "joins", _
+                                                "joint", "joignons", _
+                                                "joignez", "joignent", _
+                                                "joindre"}
+
+        Public Shared strLire() As String = {"lis", "lis", "lit", _
+                                             "lisons", "lisez", _
+                                             "lisent", "lire"}
+
+        Public Shared strOffrir() As String = {"offre", "offres", _
+                                               "offre", "offrons", _
+                                               "offrez", "offrent", _
+                                               "offrir"}
+
+        Public Shared strOuvrir() As String = {"ouvre", "ouvres", _
+                                               "ouvre", "ouvrons", _
+                                               "ouvrez", "ouvrent", _
+                                               "ouvrir"}
+
+        Public Shared strParaitre() As String = {"parais", "parais", _
+                                                  "paraît", "paraissons", _
+                                                  "paraissez", "paraissent", _
+                                                  "paraître"}
+
+        Public Shared strPeindre() As String = {"peins", "peins", _
+                                                "peint", "peignons", _
+                                                "peignez", "peignent", _
+                                                "peindre"}
+
+        Public Shared strPouvoir() As String = {"peux, puis", "peux", _
+                                                "peut", "pouvons", _
+                                                "pouvez", "peuvent", _
+                                                "pouvoir"}
+
+        Public Shared strRecevoir() As String = {"reçois", "reçois", _
+                                                 "reçoit", "recevons", _
+                                                 "recevez", "reçoivent", _
+                                                 "recevoir"}
+
+        Public Shared strSavoir() As String = {"sais", "sais", _
+                                               "sait", "savons", _
+                                               "savez", "savent", _
+                                               "savoir"}
+
+        Public Shared strSouffrir() As String = {"souffre", "souffres", _
+                                                 "souffre", "souffrons", _
+                                                 "souffrez", "souffrent", _
+                                                 "souffrir"}
+
+        Public Shared strSurprendre() As String = {"surprends", "surprends", _
+                                                   "surprend", "surprenons", _
+                                                   "surprenez", "surprennent", _
+                                                   "surprendre"}
+
+        Public Shared strSuivre() As String = {"suis", "suis", _
+                                               "suit", "suivons", _
+                                               "suivez", "suivent", _
+                                               "suivre"}
+
+        Public Shared strTenir() As String = {"tiens", "tiens", _
+                                              "tient", "tenons", _
+                                              "tenez", "tiennent", _
+                                              "tenir"}
+
+        Public Shared strVenir() As String = {"viens", "viens", _
+                                              "vient", "venons", _
+                                              "venez", "viennent", _
+                                              "venir"}
+
+        Public Shared strVivre() As String = {"vis", "vis", _
+                                              "vit", "vivons", _
+                                              "vivez", "vivent", _
+                                              "vivre"}
+
+        Public Shared strVoir() As String = {"vois", "vois", _
+                                             "voit", "voyons", _
+                                             "voyez", "voient", _
+                                             "voir"}
+
+        Public Shared strVouloir() As String = {"veux", "veux", _
+                                                "veut", "voulons", _
+                                                "voulez", "veulent", _
+                                                "vouloir"}
+
+        Public Shared strIrregularVerbs() As String = {"Irregular Verbs", "aller", "appeller", _
+                                                       "avoir", "conduire", "courir", "dire", _
                                                        "dormir", "être", "faire", _
                                                        "mettre", "partir", "préférer", _
                                                        "prendre", "rire", "sortir", _
-                                                       "traduire", "apprendre", "atteindre", "acquérir", _
-                                                       "boire", "battre", "comprendre", "connaître", "construire", _
-                                                       "couvrir", "craindre", "croire"}
+                                                       "traduire", "apprendre", "atteindre", _
+                                                       "acquérir", "boire", "battre", "comprendre", _
+                                                       "connaître", "construire", "couvrir", _
+                                                       "craindre", "croire", _
+                                                       "décevoir", "découvrir", "devoir", _
+                                                       "écrire", "instruire", "joindre", _
+                                                       "lire", "offrir", "ouvrir", _
+                                                       "paraître", "peindre", "pouvoir", _
+                                                       "recevoir", "savoir", "souffrir", _
+                                                       "surprendre", "suivre", "tenir", _
+                                                       "venir", "vivre", "voir", "vouloir"}
+
 
     End Structure
 
