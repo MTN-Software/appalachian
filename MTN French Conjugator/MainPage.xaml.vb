@@ -3,6 +3,8 @@ Imports French_Conjugator.VerbAndSubjectVals
 Imports French_Conjugator.IrregularVerbsvb
 Imports French_Conjugator.RegularVerbs
 Imports French_Conjugator.VerbTenses
+Imports Microsoft.Phone.Tasks
+Imports Coding4Fun.Toolkit.Controls
 
 
 
@@ -16,6 +18,7 @@ Partial Public Class MainPage
 
     Private getIPVerbCong As IPVerbs
 
+    Dim msgHelp As New MessagePrompt
 
 
     Private Sub MainPage_Loaded(sender As Object, e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
@@ -32,6 +35,7 @@ Partial Public Class MainPage
     End Sub
 
     Public Sub mnuAbout_Click(sender As Object, e As System.EventArgs) Handles mnuAbout.Click
+        'NavigationService.Navigate(New Uri("/AboutPage.xaml", UriKind.Relative))
         NavigationService.Navigate(New Uri("/AboutPage.xaml", UriKind.Relative))
     End Sub
 
@@ -47,7 +51,9 @@ Partial Public Class MainPage
 
 
     Public Sub btnHelp_Click(sender As Object, e As System.EventArgs) Handles btnHelp.Click
-        MessageBox.Show("Enter in a french verb, select the subject, then what type of verb it is.", "Help", MessageBoxButton.OK)
+        msgHelp.Title = "Help"
+        msgHelp.Message = "Enter a verb then select the tense and subject, then press the conjugate button."
+        msgHelp.Show()
     End Sub
 
 
@@ -60,16 +66,19 @@ Partial Public Class MainPage
     End Sub
 
 
-    
+
 
     Private Sub btnConjugate_Click(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles btnConjugate.Click
         strVerb = txtVerb.Text
         strCurrentVerb = txtCurrentVerb.Text
         getIrregular()
+        getPCExceptions()
         If (intTense = 1) Then
             Call Present_Conj()
             txtVerb.Text = strVerb
         ElseIf (intTense = 2) Then
+            Call PC_Conj()
+            txtVerb.Text = strVerb
         ElseIf (intTense = 3) Then
             Call IPVerbs.ImperfectPast_Conj(intVerb)
             txtVerb.Text = strVerb
@@ -109,24 +118,61 @@ Partial Public Class MainPage
 
     Private Sub getIrregular()
         Dim strTempVerb As String = txtCurrentVerb.Text.ToLower
-        Dim intIndex = 1
-        Do
+        For intIndex = 1 To 49
             If (strTempVerb = Irregular.strIrregularVerbs(intIndex)) Then
                 intVerb = intIndex
                 blnIsIrregular = True
-                Exit Do
+                Exit For
             Else
                 blnIsIrregular = False
             End If
-
-            intIndex += 1
-        Loop Until intIndex = 16
-
-
+        Next
 
     End Sub
 
-   
+    Private Sub getPCExceptions()
+        Try
+
+
+            Dim strTempVerb As String = txtCurrentVerb.Text.ToLower
+            For intIndex = 0 To 43
+                If (strTempVerb = PCVerbs.strListOfIrregularPC(intIndex)) Then
+                    intPCIrregularVerb = intIndex
+                    blnIsIrregularInPC = True
+                    Exit For
+                Else
+                    blnIsIrregularInPC = False
+                End If
+            Next
+
+            For intIndexes = 0 To 17
+                If (strTempVerb = PCVerbs.strEtreInPC(intIndexes)) Then
+                    intPCEtreVerb = intIndexes
+                    blnUseEtreInPC = True
+                    Exit For
+                Else
+                    blnUseEtreInPC = False
+                End If
+            Next
+
+        Catch ex As Exception
+            Dim dlgResponce As MessageBoxResult
+            dlgResponce = MessageBox.Show("Would you like to report this?" & vbNewLine & ex.Message, _
+                            "Err... This is embarrassing.", MessageBoxButton.OKCancel)
+
+            If (dlgResponce = MessageBoxResult.OK) Then
+                Dim emailcomposer = New EmailComposeTask() With { _
+                .To = String.Concat("mailto:", "ThomasTNF@live.com"), _
+                .Subject = "French Conj App Error Report", _
+                .Body = ex.InnerException.ToString() _
+                }
+                emailcomposer.Show()
+            Else
+
+            End If
+        End Try
+    End Sub
+
 
     Private Sub txtVerb_LostFocus(sender As Object, e As System.Windows.RoutedEventArgs) Handles txtVerb.LostFocus
         strTextbox = txtVerb.Text
@@ -160,4 +206,41 @@ Partial Public Class MainPage
     End Sub
 
 
+    Private Sub txtVerb_KeyDown(sender As System.Object, e As System.Windows.Input.KeyEventArgs) Handles txtVerb.KeyDown
+        If (e.Key = Key.Enter) Then
+            pageMain.Focus()
+
+
+        End If
+    End Sub
+
+    Private Sub mnuCredits_Click(sender As Object, e As EventArgs)
+        Dim msgCredits As New MessagePrompt
+        'Dim brushColor As Brush
+        'msgCredits.Background.Opacity() = 0.6
+        msgCredits.Title = "credits"
+        msgCredits.Message = "MTN Software would like to thank //insert names"
+        msgCredits.Opacity = 0.6
+
+        msgCredits.Show()
+
+    End Sub
+
+    Private Sub listAller_Tap(sender As Object, e As Input.GestureEventArgs) Handles listAller.Tap
+        txtVerb.Text = "aller"
+        strTextbox = "aller"
+        txtCurrentVerb.Text = "aller"
+    End Sub
+
+    Private Sub listEtre_Tap(sender As Object, e As Input.GestureEventArgs) Handles listEtre.Tap
+        txtVerb.Text = "être"
+        strTextbox = "être"
+        txtCurrentVerb.Text = "être"
+    End Sub
+
+    Private Sub listManger_Tap(sender As Object, e As Input.GestureEventArgs) Handles listManger.Tap
+        txtVerb.Text = "manger"
+        strTextbox = "manger"
+        txtCurrentVerb.Text = "manger"
+    End Sub
 End Class

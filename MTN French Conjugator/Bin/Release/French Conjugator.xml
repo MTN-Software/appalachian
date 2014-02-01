@@ -22,10 +22,6 @@ InitializeComponent
 	<summary>
 InitializeComponent
 </summary>
-</member><member name="M:French_Conjugator.ReportPage.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
 </member><member name="P:French_Conjugator.App.RootFrame">
 	<summary>
  Provides easy access to the root frame of the Phone Application.
@@ -35,6 +31,10 @@ InitializeComponent
 	<summary>
  Constructor for the Application object.
  </summary>
+</member><member name="M:French_Conjugator.ReportPage.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
 </member>
 </members>
 </doc>

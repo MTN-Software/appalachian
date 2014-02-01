@@ -4,6 +4,7 @@ Imports French_Conjugator.IrregularVerbsvb
 Imports French_Conjugator.RegularVerbs
 Imports French_Conjugator.VerbTenses
 Imports Microsoft.Phone.Tasks
+Imports Coding4Fun.Toolkit.Controls
 
 
 
@@ -17,6 +18,7 @@ Partial Public Class MainPage
 
     Private getIPVerbCong As IPVerbs
 
+    Dim msgHelp As New MessagePrompt
 
 
     Private Sub MainPage_Loaded(sender As Object, e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
@@ -48,7 +50,9 @@ Partial Public Class MainPage
 
 
     Public Sub btnHelp_Click(sender As Object, e As System.EventArgs) Handles btnHelp.Click
-        MessageBox.Show("Enter in a french verb, select the subject, then what type of verb it is.", "Help", MessageBoxButton.OK)
+        msgHelp.Title = "Help"
+        msgHelp.Message = "Enter a verb then select the tense and subject, then press the conjugate button."
+        msgHelp.Show()
     End Sub
 
 
@@ -158,8 +162,8 @@ Partial Public Class MainPage
             If (dlgResponce = MessageBoxResult.OK) Then
                 Dim emailcomposer = New EmailComposeTask() With { _
                 .To = String.Concat("mailto:", "ThomasTNF@live.com"), _
-                .Subject = "Feature Suggestion", _
-                .Body = ex.Message _
+                .Subject = "French Conj App Error Report", _
+                .Body = ex.InnerException.ToString() _
                 }
                 emailcomposer.Show()
             Else
@@ -207,5 +211,17 @@ Partial Public Class MainPage
 
 
         End If
+    End Sub
+
+    Private Sub mnuCredits_Click(sender As Object, e As EventArgs)
+        Dim msgCredits As New MessagePrompt
+        Dim brushColor As Brush
+        'msgCredits.Background.Opacity() = 0.6
+        msgCredits.Title = "credits"
+        msgCredits.Message = "MTN Software would like to thank //insert names"
+        msgCredits.Opacity = 0.6
+
+        msgCredits.Show()
+
     End Sub
 End Class

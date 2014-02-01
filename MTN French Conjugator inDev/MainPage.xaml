@@ -24,11 +24,17 @@
             <GradientStop Color="#FF697FF2" Offset="1" />
         </LinearGradientBrush>
     </phone:PhoneApplicationPage.Resources>
+    <phone:PhoneApplicationPage.Background>
+        <ImageBrush Stretch="Fill" ImageSource="/Images/background.png"/>
+    </phone:PhoneApplicationPage.Background>
 
-  
+
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="/Images/background.png"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -41,12 +47,12 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        
+
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            
+
             <TextBox Height="72" HorizontalAlignment="Left" Margin="-12,6,0,0" Name="txtVerb" Text="Enter verb here" VerticalAlignment="Top" Width="480" BorderThickness="0">
             </TextBox>
-            <ListBox Height="261" HorizontalAlignment="Left" Margin="0,162,0,0" Name="listSubject" VerticalAlignment="Top" Width="222" BorderThickness="3" BorderBrush="{StaticResource Foreground1}" RenderTransformOrigin="0.5,0.5">
+            <ListBox Height="261" HorizontalAlignment="Left" Margin="0,162,0,0" Name="listSubject" VerticalAlignment="Top" Width="222" BorderThickness="3" RenderTransformOrigin="0.5,0.5">
                 <ListBoxItem Content="Je" BorderThickness="3" Name="listJe" FontSize="26" Margin="10,26,0,0" IsSelected="True" />
                 <ListBoxItem Content="Tu" BorderThickness="3" Name="listTu" FontSize="26" Margin="10,26,0,0" />
                 <ListBoxItem Content="Elle/Il/On" BorderThickness="3" Name="ListElle" FontSize="26" Margin="10,26,0,0" />
@@ -55,19 +61,19 @@
                 <ListBoxItem Content="Elles/Ils" BorderThickness="3" Name="listElles" FontSize="26" Margin="10,26,0,0" />
             </ListBox>
 
-            <Button Content="Conjugate" Height="72" HorizontalAlignment="Left" Margin="-12,429,0,0" Name="btnConjugate" VerticalAlignment="Top" Width="480" Foreground="{StaticResource PhoneAccentBrush}" BorderBrush="{StaticResource PhoneAccentBrush}" />
-            <ListBox Height="261" Margin="228,162,6,184" Name="listVerbTense" Width="222" BorderThickness="3" BorderBrush="{StaticResource Foreground2}" >
+            <Button Content="Conjugate" Height="72" HorizontalAlignment="Left" Margin="-12,429,0,0" Name="btnConjugate" VerticalAlignment="Top" Width="480" BorderBrush="{StaticResource PhoneAccentBrush}" Background="{x:Null}" />
+            <ListBox Height="261" Margin="228,162,6,184" Name="listVerbTense" Width="222" BorderThickness="3" >
                 <ListBoxItem Content="Present"  BorderThickness="3" Margin="10,26,0,0" IsSelected="True" FontSize="26" Name="listPresent" />
                 <ListBoxItem Content="Past"  BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="listPast" IsEnabled="True" />
                 <ListBoxItem Content="Imperfect Past" BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="ListImperfectPast" />
                 <ListBoxItem Content="Futur Proche"  BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="ListFuturProche" IsEnabled="False" />
-                </ListBox>
+            </ListBox>
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="0,126,0,0" Name="txtSubjectLable" Text="Subject:  None" VerticalAlignment="Top" />
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="226,126,0,0" Name="txtVerbTenseLable" Text="Verb Tense :  Present" VerticalAlignment="Top" />
         </Grid>
         <TextBlock Grid.RowSpan="2" Height="30" HorizontalAlignment="Left" Margin="238,146,0,0" Name="txtCurrentVerb" Text="" VerticalAlignment="Top" Width="231" TextAlignment="Right" />
         <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,145,0,0" Name="txtCurrentVerbLable" Text="Current Verb:" TextAlignment="Left" VerticalAlignment="Top" Width="121" Grid.RowSpan="2" />
-        
+
     </Grid>
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
@@ -78,6 +84,7 @@
                 <shell:ApplicationBarMenuItem Text="Report a bug" Click="mnuReport_Click"  x:Name="mnuReport" />
                 <shell:ApplicationBarMenuItem Text="Suggest a feature" Click="mnuSuggest_Click" x:Name="mnuSuggest" />
                 <shell:ApplicationBarMenuItem Text="About" Click="mnuAbout_Click"  x:Name="mnuAbout"  />
+                <shell:ApplicationBarMenuItem Text="Credits" Click="mnuCredits_Click" x:Name="mnuCredits" />
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

@@ -23,3 +23,27 @@ C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Co
 C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.dll
 C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\Bin\Debug\Microsoft.Phone.Controls.xml
 C:\Users\Thomas\Documents\Visual Studio 2010\Projects\FrenchConjugator\French Conjugator\obj\Debug\PageThanks.g.i.vb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\ApplicationIcon.png
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\Background.png
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\French Conjugator.dll
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\French Conjugator.pdb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\French Conjugator.xml
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\AppManifest.xaml
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\My Project\WMAppManifest.xml
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\French Conjugator_Debug_AnyCPU.xap
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\French Conjugator.vbprojResolveAssemblyReference.cache
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\App.g.i.vb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\AboutPage.g.i.vb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\MainPage.g.i.vb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\PageThanks.g.i.vb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\ReportPage.g.i.vb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\SuggestPage.g.i.vb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\French Conjugator.g.resources
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\French Conjugator.dll
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\French Conjugator.xml
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\French Conjugator.pdb
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\obj\Debug\XapCacheFile.xml
+C:\Users\Thomas\Documents\Visual Studio 2013\Projects\MTN French Conjugator inDev\Bin\Debug\Microsoft.Phone.Controls.xml

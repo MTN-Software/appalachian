@@ -19,9 +19,15 @@
             <GradientStop Color="#FF697FF2" Offset="1" />
         </LinearGradientBrush>
     </phone:PhoneApplicationPage.Resources>
-    
+    <phone:PhoneApplicationPage.Background>
+        <ImageBrush Stretch="UniformToFill" ImageSource="/Images/background.png"/>
+    </phone:PhoneApplicationPage.Background>
+
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="/Images/background.png"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
