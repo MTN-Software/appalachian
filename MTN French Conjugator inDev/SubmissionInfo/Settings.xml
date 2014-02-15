@@ -3,4 +3,6 @@
   <LargeAppTile>Background.png</LargeAppTile>
   <PCAppTile>MarketplaceIcon.png</PCAppTile>
   <ScreenShots>ScreenCapOne.png;ScreenCapTwo.png;ScreenCapThree.png;ScreenCapFour.png;ScreenCapFive.png;ScreenCapSix.png;;;</ScreenShots>
+  <ScreenShotsWXGA>;;;;;;;;</ScreenShotsWXGA>
+  <ScreenShots720P>;;;;;;;;</ScreenShots720P>
 </MarketplaceDetails>

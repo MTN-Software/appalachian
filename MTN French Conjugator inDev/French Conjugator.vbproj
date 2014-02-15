@@ -218,12 +218,14 @@
     <Content Include="Images\appbar.overflowdots.png" />
     <Content Include="Images\appbar.questionmark.rest.png" />
     <Content Include="Images\appbar.refresh.rest.png" />
+    <Content Include="SplashScreenImage.jpg" />
     <Resource Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Resource Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Resource Include="Images\MTNSoftwareLogo.png" />
     <Resource Include="MTNSoftwareLogo.png" />
     <Content Include="Images\background.png" />
-    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="MarketplaceIcon.png" />
+    <Content Include="LegacySplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
