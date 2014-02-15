@@ -5,6 +5,8 @@ Imports French_Conjugator.RegularVerbs
 Imports French_Conjugator.VerbTenses
 Imports Microsoft.Phone.Tasks
 Imports Coding4Fun.Toolkit.Controls
+Imports Windows.Devices.Sensors
+Imports Windows.Phone.Speech
 
 
 
@@ -14,6 +16,7 @@ Partial Public Class MainPage
     ' Constructor
     Public Sub New()
         InitializeComponent()
+
     End Sub
 
     Private getIPVerbCong As IPVerbs
@@ -214,14 +217,22 @@ Partial Public Class MainPage
     End Sub
 
     Private Sub mnuCredits_Click(sender As Object, e As EventArgs)
-        Dim msgCredits As New MessagePrompt
-        Dim brushColor As Brush
-        'msgCredits.Background.Opacity() = 0.6
-        msgCredits.Title = "credits"
-        msgCredits.Message = "MTN Software would like to thank //insert names"
-        msgCredits.Opacity = 0.6
-
-        msgCredits.Show()
+        Try
+            Dim msgCredits As New MessagePrompt
+            Dim brushColor = New SolidColorBrush(Color.FromArgb(255, 27, 161, 226))
+            'msgCredits.Background.Opacity() = 0.6
+            msgCredits.Title = "credits"
+            msgCredits.Message = "MTN Software would like to thank:" & vbNewLine & "LTHS Programming in Visual Basic class." & vbNewLine & "Coding4Fun" & vbNewLine & "LTHS French II Accel class." & vbNewLine & "Microsoft" & vbNewLine & "My Friends"
+            msgCredits.Opacity = 0.6
+            msgCredits.Background = brushColor
+            msgCredits.Show()
+        Catch ex As Exception
+            Dim msgOops As New MessagePrompt
+            msgOops.Title = "Err... This is embarrassing"
+            msgOops.Message = "So... This just happened: " & vbNewLine & ex.Message
+            msgOops.Show()
+        End Try
+        
 
     End Sub
 End Class
