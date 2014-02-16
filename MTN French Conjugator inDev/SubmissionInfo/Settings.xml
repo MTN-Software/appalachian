@@ -1,8 +1,8 @@
 <MarketplaceDetails>
-  <SmallAppTile>ApplicationIconSmall.png</SmallAppTile>
+  <SmallAppTile>ApplicationIcon300.png</SmallAppTile>
   <LargeAppTile>Background.png</LargeAppTile>
   <PCAppTile>MarketplaceIcon.png</PCAppTile>
-  <ScreenShots>ScreenCapOne.png;ScreenCapTwo.png;ScreenCapThree.png;ScreenCapFour.png;ScreenCapFive.png;ScreenCapSix.png;;;</ScreenShots>
-  <ScreenShotsWXGA>;;;;;;;;</ScreenShotsWXGA>
-  <ScreenShots720P>;;;;;;;;</ScreenShots720P>
+  <ScreenShots>ScreenCapFive.png;;;;;;;;</ScreenShots>
+  <ScreenShotsWXGA>wp_ss_20140215_0001[2].png;wp_ss_20140215_0002[1].png;wp_ss_20140215_0003[1].png;wp_ss_20140215_0004[1].png;wp_ss_20140215_0005[1].png;wp_ss_20140215_0006[1].png;;;</ScreenShotsWXGA>
+  <ScreenShots720P>ss720.png;;;;;;;;</ScreenShots720P>
 </MarketplaceDetails>

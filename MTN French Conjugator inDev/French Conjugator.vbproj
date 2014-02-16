@@ -204,6 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="FrenchAppBackground.psd" />
+    <None Include="French_Conjugator_2014_02_15_20_15_24.sap" />
     <None Include="My Project\AppManifest.xml" />
     <None Include="My Project\WMAppManifest.xml">
       <SubType>Designer</SubType>
