@@ -63,7 +63,7 @@
             </ListBox>
 
             <Button Content="Conjugate" Height="72" HorizontalAlignment="Left" Margin="-12,429,0,0" Name="btnConjugate" VerticalAlignment="Top" Width="480" BorderBrush="{StaticResource PhoneAccentBrush}" Background="{x:Null}" toolkit:TiltEffect.SuppressTilt="false" />
-            <ListBox Height="261" Margin="228,162,6,184" Name="listVerbTense" Width="222" BorderThickness="3" >
+            <ListBox Height="261" Margin="228,162,6,184" Name="listVerbTense" Width="222" BorderThickness="3" RenderTransformOrigin="0.5,0.5" >
                 <ListBoxItem Content="Present"  BorderThickness="3" Margin="10,26,0,0" IsSelected="True" FontSize="26" Name="listPresent" />
                 <ListBoxItem Content="Past"  BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="listPast" IsEnabled="True" />
                 <ListBoxItem Content="Imperfect Past" BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="ListImperfectPast" />

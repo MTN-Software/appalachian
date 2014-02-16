@@ -10,8 +10,6 @@ Imports Windows.Phone.Speech
 Imports Microsoft.Phone.Controls
 
 
-
-
 Partial Public Class MainPage
     Inherits PhoneApplicationPage
 
