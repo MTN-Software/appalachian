@@ -7,6 +7,8 @@ Imports Microsoft.Phone.Tasks
 Imports Coding4Fun.Toolkit.Controls
 Imports Windows.Devices.Sensors
 Imports Windows.Phone.Speech
+Imports Microsoft.Phone.Controls
+
 
 
 
@@ -71,6 +73,7 @@ Partial Public Class MainPage
 
 
     Private Sub btnConjugate_Click(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles btnConjugate.Click
+
         strVerb = txtVerb.Text
         strCurrentVerb = txtCurrentVerb.Text
         getIrregular()

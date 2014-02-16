@@ -58,7 +58,6 @@ C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\F
 C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\Microsoft.Phone.Controls.dll
 C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
 C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
-C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\Microsoft.Phone.Controls.xml
 C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\obj\Debug\French Conjugator.vbprojResolveAssemblyReference.cache
 C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\obj\Debug\App.g.i.vb
 C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\obj\Debug\AboutPage.g.i.vb
@@ -71,3 +70,27 @@ C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\obj\Debug\F
 C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\obj\Debug\French Conjugator.xml
 C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\obj\Debug\French Conjugator.pdb
 C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\obj\Debug\XapCacheFile.xml
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\Microsoft.Expression.Controls.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll

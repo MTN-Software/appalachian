@@ -10,9 +10,17 @@ MDIL image C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\
 
 
 File C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\French Conjugator.dll output C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\obj\Debug\MDIL\French Conjugator.dll
+Processing file: C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Expression.Controls.dll
+File C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Expression.Controls.dll is not in the compile filter. Skipping.
+Processing file: C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Expression.Drawing.dll
+File C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Expression.Drawing.dll is not in the compile filter. Skipping.
+Processing file: C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Expression.Interactions.dll
+File C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Expression.Interactions.dll is not in the compile filter. Skipping.
 Processing file: C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Phone.Controls.dll
 File C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Phone.Controls.dll is not in the compile filter. Skipping.
 Processing file: C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Phone.Controls.Toolkit.dll
 File C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\Microsoft.Phone.Controls.Toolkit.dll is not in the compile filter. Skipping.
+Processing file: C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\System.Windows.Interactivity.dll
+File C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\System.Windows.Interactivity.dll is not in the compile filter. Skipping.
 Processing file: C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\WMAppManifest.xml
 File C:\Users\Thomas\Source\Repos\appalachian\MTN French Conjugator inDev\Bin\Debug\MDIL\WMAppManifest.xml is not in the compile filter. Skipping.
