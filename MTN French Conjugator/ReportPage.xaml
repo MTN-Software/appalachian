@@ -19,9 +19,12 @@
             <GradientStop Color="#FF697FF2" Offset="1" />
         </LinearGradientBrush>
     </phone:PhoneApplicationPage.Resources>
-    
+
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Images/background.png"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -35,11 +38,11 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBox Height="482" HorizontalAlignment="Left" Margin="6,0,0,0" Name="txtReport" Text="Enter your bug report here." VerticalAlignment="Top" Width="444" />
-            <Button Content="Send" Height="72" HorizontalAlignment="Left" Margin="12,529,0,0" Name="btnSendReport" VerticalAlignment="Top" Width="438" Foreground="{StaticResource Foreground1}" BorderBrush="{StaticResource Foreground1}" />
+            <TextBox Height="482" HorizontalAlignment="Left" Name="txtReport" Text="Enter your bug report here." VerticalAlignment="Top" Width="456" />
+            <Button Content="Send" Height="72" HorizontalAlignment="Left" Margin="0,529,0,0" Name="btnSendReport" VerticalAlignment="Top" Width="456" Foreground="{StaticResource Foreground1}" BorderBrush="{StaticResource Foreground1}" />
         </Grid>
     </Grid>
- 
+
     <!--Sample code showing usage of ApplicationBar-->
     <!--<phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">

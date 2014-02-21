@@ -5,8 +5,9 @@ Imports French_Conjugator.RegularVerbs
 Imports French_Conjugator.VerbTenses
 Imports Microsoft.Phone.Tasks
 Imports Coding4Fun.Toolkit.Controls
-
-
+Imports Windows.Devices.Sensors
+Imports Windows.Phone.Speech
+Imports Microsoft.Phone.Controls
 
 Partial Public Class MainPage
     Inherits PhoneApplicationPage
@@ -14,6 +15,7 @@ Partial Public Class MainPage
     ' Constructor
     Public Sub New()
         InitializeComponent()
+
     End Sub
 
     Private getIPVerbCong As IPVerbs
@@ -35,7 +37,6 @@ Partial Public Class MainPage
     End Sub
 
     Public Sub mnuAbout_Click(sender As Object, e As System.EventArgs) Handles mnuAbout.Click
-        'NavigationService.Navigate(New Uri("/AboutPage.xaml", UriKind.Relative))
         NavigationService.Navigate(New Uri("/AboutPage.xaml", UriKind.Relative))
     End Sub
 
@@ -69,6 +70,7 @@ Partial Public Class MainPage
 
 
     Private Sub btnConjugate_Click(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles btnConjugate.Click
+
         strVerb = txtVerb.Text
         strCurrentVerb = txtCurrentVerb.Text
         getIrregular()
@@ -215,32 +217,22 @@ Partial Public Class MainPage
     End Sub
 
     Private Sub mnuCredits_Click(sender As Object, e As EventArgs)
-        Dim msgCredits As New MessagePrompt
-        'Dim brushColor As Brush
-        'msgCredits.Background.Opacity() = 0.6
-        msgCredits.Title = "credits"
-        msgCredits.Message = "MTN Software would like to thank //insert names"
-        msgCredits.Opacity = 0.6
+        Try
+            Dim msgCredits As New MessagePrompt
+            Dim brushColor = New SolidColorBrush(Color.FromArgb(255, 27, 161, 226))
+            'msgCredits.Background.Opacity() = 0.6
+            msgCredits.Title = "credits"
+            msgCredits.Message = "MTN Software would like to thank:" & vbNewLine & "LTHS Programming in Visual Basic class." & vbNewLine & "Coding4Fun" & vbNewLine & "LTHS French II Accel class." & vbNewLine & "Microsoft" & vbNewLine & "My Friends"
+            msgCredits.Opacity = 0.6
+            msgCredits.Background = brushColor
+            msgCredits.Show()
+        Catch ex As Exception
+            Dim msgOops As New MessagePrompt
+            msgOops.Title = "Err... This is embarrassing"
+            msgOops.Message = "So... This just happened: " & vbNewLine & ex.Message
+            msgOops.Show()
+        End Try
+        
 
-        msgCredits.Show()
-
-    End Sub
-
-    Private Sub listAller_Tap(sender As Object, e As Input.GestureEventArgs) Handles listAller.Tap
-        txtVerb.Text = "aller"
-        strTextbox = "aller"
-        txtCurrentVerb.Text = "aller"
-    End Sub
-
-    Private Sub listEtre_Tap(sender As Object, e As Input.GestureEventArgs) Handles listEtre.Tap
-        txtVerb.Text = "être"
-        strTextbox = "être"
-        txtCurrentVerb.Text = "être"
-    End Sub
-
-    Private Sub listManger_Tap(sender As Object, e As Input.GestureEventArgs) Handles listManger.Tap
-        txtVerb.Text = "manger"
-        strTextbox = "manger"
-        txtCurrentVerb.Text = "manger"
     End Sub
 End Class

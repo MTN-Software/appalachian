@@ -31,11 +31,11 @@ InitializeComponent
 	<summary>
 InitializeComponent
 </summary>
-</member><member name="M:French_Conjugator.SuggestPage.InitializeComponent">
+</member><member name="M:French_Conjugator.AboutPage.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
-</member><member name="M:French_Conjugator.AboutPage.InitializeComponent">
+</member><member name="M:French_Conjugator.SuggestPage.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
