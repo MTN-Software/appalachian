@@ -20,7 +20,7 @@
         </LinearGradientBrush>
     </phone:PhoneApplicationPage.Resources>
     <phone:PhoneApplicationPage.Background>
-        <ImageBrush Stretch="UniformToFill" ImageSource="/Images/background.png"/>
+        <ImageBrush Stretch="UniformToFill" ImageSource="/Images/background.png" x:Name="picBack"/>
     </phone:PhoneApplicationPage.Background>
 
     <!--LayoutRoot is the root grid where all page content is placed-->

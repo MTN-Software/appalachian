@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
-  <DefaultLanguage xmlns="" code="" />
-  <App xmlns="" ProductID="{ca6c07bd-df03-4334-bcc6-fc79ae38993f}" Title="French Conjugator" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Thomas Maloney" Description="Sample description" Publisher="MTN Software" PublisherID="{58134d65-7c6c-4b31-94db-06d09daa4e4f}">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <Languages xmlns="">
+    <Language code="en-US" />
+  </Languages>
+  <App xmlns="" ProductID="{ca6c07bd-df03-4334-bcc6-fc79ae38993f}" Title="French Conjugator" RuntimeType="Silverlight" Version="1.9.0.2" Genre="apps.normal" Author="Thomas Maloney" Description="Sample description" Publisher="MTN Software" PublisherID="{58134d65-7c6c-4b31-94db-06d09daa4e4f}">
     <IconPath IsRelative="true" IsResource="false">MarketplaceIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />

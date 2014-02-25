@@ -5,9 +5,10 @@ Imports French_Conjugator.RegularVerbs
 Imports French_Conjugator.VerbTenses
 Imports Microsoft.Phone.Tasks
 Imports Coding4Fun.Toolkit.Controls
-Imports Windows.Devices.Sensors
 Imports Windows.Phone.Speech
 Imports Microsoft.Phone.Controls
+Imports Microsoft.Devices.Sensors.Accelerometer
+Imports Microsoft.Devices.Sensors
 
 Partial Public Class MainPage
     Inherits PhoneApplicationPage
@@ -21,9 +22,13 @@ Partial Public Class MainPage
     Private getIPVerbCong As IPVerbs
 
     Dim msgHelp As New MessagePrompt
+    Dim brushAccent As Brush
+    Dim accelerometer As Accelerometer
+    Dim accelRead As New AccelerometerReading()
 
 
     Private Sub MainPage_Loaded(sender As Object, e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
+
         intTense = 1
         intSubject = 0
         txtVerb.Text = "Enter Verb Here"

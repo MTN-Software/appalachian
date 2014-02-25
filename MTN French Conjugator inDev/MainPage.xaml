@@ -13,7 +13,7 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="True" Name="pageMain" xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
-    
+
     <phone:PhoneApplicationPage.Resources>
         <LinearGradientBrush x:Key="Foreground1" EndPoint="1,0.5" StartPoint="0,0.5">
             <GradientStop Color="Red" Offset="0" />
@@ -26,15 +26,18 @@
         </LinearGradientBrush>
     </phone:PhoneApplicationPage.Resources>
     <phone:PhoneApplicationPage.Background>
-        <ImageBrush Stretch="Fill" ImageSource="/Images/background.png"/>
+        <ImageBrush Stretch="Fill" ImageSource="/Images/background.png" x:Name="picBack"/>
     </phone:PhoneApplicationPage.Background>
-    
+
 
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot">
-        <Grid.Background>
-            <ImageBrush Stretch="None" ImageSource="/Images/background.png"/>
+    <Grid x:Name="LayoutRoot" >
+
+        <Grid.Background>            
+            <!--<SolidColorBrush Opacity="0.4" Color="{StaticResource PhoneAccentColor}" />-->
+            <ImageBrush Stretch="None" ImageSource="/Images/background.png" />
+
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -44,13 +47,13 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="MTN SOFTWARE" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource Foreground1}"></TextBlock>
-            <TextBlock x:Name="PageTitle" Text="French Verbs" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource Foreground1}" />
+            <TextBlock x:Name="PageTitle" Text="French Verbs" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource Foreground1}" toolkit:TiltEffect.IsTiltEnabled="True" toolkit:TiltEffect.SuppressTilt="false" RenderTransformOrigin="0.5,0.5" TextOptions.TextHintingMode="Animated" />
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
 
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            
             <TextBox Height="72" HorizontalAlignment="Left" Margin="-12,6,0,0" Name="txtVerb" Text="Enter verb here" VerticalAlignment="Top" Width="480" BorderThickness="0">
             </TextBox>
             <ListBox Height="261" HorizontalAlignment="Left" Margin="0,162,0,0" Name="listSubject" VerticalAlignment="Top" Width="222" BorderThickness="3" RenderTransformOrigin="0.5,0.5">
