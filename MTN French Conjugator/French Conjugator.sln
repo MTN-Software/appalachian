@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "French Conjugator", "French Conjugator.vbproj", "{EE21B98B-6608-4547-B9F1-61AA4762E87F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTN French", "..\MTN French\MTN French.csproj", "{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,24 @@ Global
 		{EE21B98B-6608-4547-B9F1-61AA4762E87F}.Release|x86.ActiveCfg = Debug|x86
 		{EE21B98B-6608-4547-B9F1-61AA4762E87F}.Release|x86.Build.0 = Release|x86
 		{EE21B98B-6608-4547-B9F1-61AA4762E87F}.Release|x86.Deploy.0 = Release|x86
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Debug|ARM.Build.0 = Debug|ARM
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Debug|ARM.Deploy.0 = Debug|ARM
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Debug|x86.ActiveCfg = Debug|x86
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Debug|x86.Build.0 = Debug|x86
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Debug|x86.Deploy.0 = Debug|x86
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Release|ARM.ActiveCfg = Release|ARM
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Release|ARM.Build.0 = Release|ARM
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Release|ARM.Deploy.0 = Release|ARM
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Release|x86.ActiveCfg = Release|x86
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Release|x86.Build.0 = Release|x86
+		{4AB50BFB-2AEA-4CD3-A4A1-EBC9E6D1B17E}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
