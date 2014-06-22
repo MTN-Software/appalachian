@@ -1,0 +1,41 @@
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\Images\ApplicationIcon.png
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\Images\Background.png
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\App.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\Conjugate.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\MainPage.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\MTN French.xr.xml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\MTN French.exe
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\MTN French.pdb
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\resources.pri
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\AppxManifest.xml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\MTN French.build.appxrecipe
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\App.g.i.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\App.g.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\Conjugate.g.i.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\Conjugate.g.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\MainPage.g.i.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\MainPage.g.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\App.xaml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\Conjugate.xaml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\MainPage.xaml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\App.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\Conjugate.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\MainPage.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\MTN French.exe
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\MTN French.pdb
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\priconfig.xml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\priconfig.xml.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\layout.resfiles
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\layout.resfiles.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\resources.resfiles
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\resources.resfiles.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\pri.resfiles
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\pri.resfiles.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\qualifiers.txt
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Debug\ProjectArchitectures.txt
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\MTN French.exe.CodeAnalysisLog.xml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Debug\MTN French.exe.lastcodeanalysissucceeded

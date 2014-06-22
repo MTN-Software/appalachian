@@ -1,41 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-
-  <Identity Name="dba0d6f8-0048-4019-b727-a079826608df"
-            Publisher="CN=Thomas"
-            Version="1.0.0.0" />
-
-  <mp:PhoneIdentity PhoneProductId="dba0d6f8-0048-4019-b727-a079826608df" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
-
+  <Identity Name="54132MTNSoftware.MTNFrench" Publisher="CN=18B5C38D-15AB-4A96-8550-558630DAFC8A" Version="2.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="6ac0ac65-2d23-4123-9f69-72c3c7a8b2f7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>MTN French</DisplayName>
-    <PublisherDisplayName>Thomas</PublisherDisplayName>
+    <PublisherDisplayName>MTN Software</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
-
   <Prerequisites>
     <OSMinVersion>6.3.1</OSMinVersion>
     <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
   </Prerequisites>
-  
   <Resources>
-    <Resource Language="x-generate"/>
+    <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application Id="App"
-        Executable="$targetnametoken$.exe"
-        EntryPoint="MTN_French.App">
-        <m3:VisualElements
-            DisplayName="MTN French"
-            Square150x150Logo="Assets\Logo.png"
-            Square44x44Logo="Assets\SmallLogo.png"
-            Description="MTN French"
-            ForegroundText="light"
-            BackgroundColor="transparent">
-            <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"/>
-            <m3:SplashScreen Image="Assets\SplashScreen.png"/>
-        </m3:VisualElements>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MTN_French.App">
+      <m3:VisualElements DisplayName="MTN French" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="MTN French" ForegroundText="light" BackgroundColor="transparent" ToastCapable="true">
+        <m3:LockScreen Notification="badge" BadgeLogo="" />
+        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\SplashScreenImage.jpg" />
+      </m3:VisualElements>
     </Application>
   </Applications>
   <Capabilities>

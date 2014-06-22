@@ -6,20 +6,7 @@ FrenchConjugator
 </name>
 </assembly>
 <members>
-<member name="P:French_Conjugator.App.RootFrame">
-	<summary>
- Provides easy access to the root frame of the Phone Application.
- </summary>
-	<returns>The root frame of the Phone Application.</returns>
-</member><member name="M:French_Conjugator.App.#ctor">
-	<summary>
- Constructor for the Application object.
- </summary>
-</member><member name="M:French_Conjugator.SuggestPage.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="M:French_Conjugator.AboutPage.InitializeComponent">
+<member name="M:French_Conjugator.SuggestPage.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
@@ -32,6 +19,19 @@ InitializeComponent
 InitializeComponent
 </summary>
 </member><member name="M:French_Conjugator.MainPage.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="P:French_Conjugator.App.RootFrame">
+	<summary>
+ Provides easy access to the root frame of the Phone Application.
+ </summary>
+	<returns>The root frame of the Phone Application.</returns>
+</member><member name="M:French_Conjugator.App.#ctor">
+	<summary>
+ Constructor for the Application object.
+ </summary>
+</member><member name="M:French_Conjugator.AboutPage.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>

@@ -1,0 +1,39 @@
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\Images\ApplicationIcon.png
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\Images\Background.png
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\App.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\Conjugate.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\MainPage.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\MTN French.xr.xml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\MTN French.exe
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\MTN French.pdb
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\resources.pri
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\AppxManifest.xml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\bin\Release\MTN French.build.appxrecipe
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\App.g.i.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\App.g.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\Conjugate.g.i.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\Conjugate.g.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\MainPage.g.i.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\MainPage.g.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\XamlTypeInfo.g.cs
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\App.xaml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\Conjugate.xaml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\App.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\Conjugate.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\XamlSaveStateFile.xml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\MainPage.xaml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\MainPage.xbf
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\MTN French.exe
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\MTN French.pdb
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\priconfig.xml
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\priconfig.xml.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\layout.resfiles
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\layout.resfiles.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\resources.resfiles
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\resources.resfiles.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\pri.resfiles
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\pri.resfiles.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\qualifiers.txt
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\qualifiers.txt.intermediate
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Thomas\Documents\GitHub\appalachian\MTN French\obj\Release\ProjectArchitectures.txt
