@@ -109,7 +109,6 @@ C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\Mic
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\Microsoft.Expression.Interactions.dll
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\Microsoft.Phone.Controls.dll
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\System.Windows.Interactivity.dll
-C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
@@ -131,7 +130,6 @@ C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\ko\
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\ru\System.Windows.Interactivity.resources.dll
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
-C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\obj\Debug\French Conjugator.vbprojResolveAssemblyReference.cache
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\obj\Debug\App.g.i.vb
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\obj\Debug\AboutPage.g.i.vb
 C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\obj\Debug\MainPage.g.i.vb

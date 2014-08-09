@@ -112,17 +112,18 @@ namespace MTN_French
         private void btnConjugate_Click(object sender, RoutedEventArgs e)
         {
             lblVerb.Text = txtInput.Text;
-            conjugateVerb(lblVerb.Text);
+            Verbs verb = new Verbs();
+            verb.DetermineVerbType(lblVerb.Text);
         }
 
-        private async void conjugateVerb(string verb)
-        {
-            PopupMenu popup = new PopupMenu();
-            popup.Commands.Add(new UICommand("copy", null, 1));
-            popup.Commands.Add(new UICommand("paste", null, 2));
-            await popup.ShowAsync(new Point(50, 50));
+        //private async void conjugateVerb(string verb)
+        //{
+            //PopupMenu popup = new PopupMenu();
+            //popup.Commands.Add(new UICommand("copy", null, 1));
+            //popup.Commands.Add(new UICommand("paste", null, 2));
+            //await popup.ShowAsync(new Point(50, 50));
             
-        }
+        //}
 
         private void btnConjugate_KeyDown(object sender, KeyRoutedEventArgs e)
         {

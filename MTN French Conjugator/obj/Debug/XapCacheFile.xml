@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\French Conjugator_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="6/22/2014 2:49:30 AM">
-  <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\obj\Debug\French Conjugator.dll" archivePath="French Conjugator.dll" lastWriteTime="6/22/2014 2:49:23 AM" />
+﻿<xapCache source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\French Conjugator_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="7/3/2014 4:41:02 PM">
+  <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\obj\Debug\French Conjugator.dll" archivePath="French Conjugator.dll" lastWriteTime="7/3/2014 4:40:56 PM" />
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="4/19/2014 8:25:38 PM" />
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\FrenchAppBackground.png" archivePath="FrenchAppBackground.png" lastWriteTime="4/19/2014 8:25:39 PM" />
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Images\appbar.back.rest.png" archivePath="Images\appbar.back.rest.png" lastWriteTime="4/19/2014 8:25:39 PM" />
@@ -10,8 +10,7 @@
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="4/19/2014 8:25:40 PM" />
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Images\background.png" archivePath="Images\background.png" lastWriteTime="4/19/2014 8:25:39 PM" />
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\LegacySplashScreenImage.jpg" archivePath="LegacySplashScreenImage.jpg" lastWriteTime="4/19/2014 8:25:39 PM" />
-  <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="6/22/2014 2:49:29 AM" />
-  <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="4/19/2014 8:25:38 PM" />
+  <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/3/2014 4:41:01 PM" />
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="4/19/2014 8:25:38 PM" />
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\Coding4Fun.Toolkit.Controls.dll" archivePath="Coding4Fun.Toolkit.Controls.dll" lastWriteTime="4/19/2014 8:25:38 PM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\Microsoft.Expression.Controls.dll" archivePath="Microsoft.Expression.Controls.dll" lastWriteTime="9/25/2012 1:41:02 AM" />
@@ -20,8 +19,6 @@
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="1/1/2013 5:57:00 PM" />
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="4/19/2014 8:25:39 PM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="9/25/2012 1:41:02 AM" />
-  <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml" archivePath="Microsoft.Phone.Controls.Toolkit.xml" lastWriteTime="4/19/2014 8:25:39 PM" />
-  <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Background.png" archivePath="Background.png" lastWriteTime="4/19/2014 8:25:38 PM" />
   <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\MarketplaceIcon.png" archivePath="MarketplaceIcon.png" lastWriteTime="4/19/2014 8:25:39 PM" />
-  <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\My Project\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="6/22/2014 2:49:29 AM" />
+  <file source="C:\Users\Thomas\Documents\GitHub\appalachian\MTN French Conjugator\Bin\Debug\My Project\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="7/3/2014 4:41:01 PM" />
 </xapCache>
