@@ -648,8 +648,7 @@ Public Class VerbTenses
 
             End Select
 
-
-
+            
 
         Else
             Dim intVerbLength As Integer = strCurrentVerb.Length
