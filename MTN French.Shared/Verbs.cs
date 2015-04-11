@@ -233,6 +233,22 @@ namespace MTN_French
 
             for (int i = 0; i < subjects.Length; i ++)
             {
+                results.Add(this.Conjugate(infinitive, subjects[i]));
+            }
+
+            string[] result = results.ToArray();
+            return result;
+        }
+
+        public async Task<string[]> ConjugateAllAsync(string infinitive)
+        {
+            string[] subjects = base.getSubjects();
+            List<string> results = new List<string>();
+
+
+            
+            for (int i = 0; i < subjects.Length; i++)
+            {
                 results.Add(base.Conjugate(infinitive, subjects[i]));
             }
 

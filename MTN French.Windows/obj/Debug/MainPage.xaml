@@ -1,0 +1,148 @@
+﻿<Page
+    x:Class="MTN_French.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MTN_French"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    	<Grid.Transitions>
+    		<TransitionCollection>
+    			<EntranceThemeTransition/>
+    		</TransitionCollection>
+    	</Grid.Transitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="625*"/>
+    		<ColumnDefinition Width="741*"/>
+    	</Grid.ColumnDefinitions>
+    	<GridViewHeaderItem Content="French Conjugations&#xD;&#xA;" VerticalAlignment="Top" Height="104" Margin="0,0,-4,0" FontSize="64" FontWeight="Bold" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<TextBox x:Name="txtVerb" Margin="10,105,112,0" TextWrapping="Wrap" PlaceholderText="Verb" InputScope="Default" VerticalAlignment="Top">
+    		<TextBox.Transitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</TextBox.Transitions>
+    	</TextBox>
+    	<Button x:ConnectionId='1' x:Name="btnConjugate" Content="Conjugate" HorizontalAlignment="Left" Margin="515,102,0,0" VerticalAlignment="Top" FontFamily="Global User Interface"                           >
+    		<Button.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</Button.ContentTransitions>
+    	</Button>
+    	<GridViewHeaderItem Content="Conjugations&#xA;" VerticalAlignment="Top" Height="78" Margin="6,96,6,0" FontSize="48" FontWeight="Bold" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem Content="Verb Type:" VerticalAlignment="Top" Height="78" Margin="6,171,547,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem x:Name="txtVerbType" Content="" VerticalAlignment="Top" Height="78" Margin="191,171,362,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem Content="Je:" VerticalAlignment="Top" Height="78" Margin="7,326,546,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem x:Name="txtJe" Content="" VerticalAlignment="Top" Height="78" Margin="192,326,361,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem x:Name="txtTu" Content="" VerticalAlignment="Top" Height="78" Margin="192,396,361,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem Content="Tu:" VerticalAlignment="Top" Height="78" Margin="12,396,541,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem Content="Il/Elle:" VerticalAlignment="Top" Height="78" Margin="12,466,541,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem x:Name="txtElle" Content="" VerticalAlignment="Top" Height="78" Margin="192,466,361,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem Content="Nous:" VerticalAlignment="Top" Height="78" Margin="377,326,176,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem x:Name="txtNous" Content="" VerticalAlignment="Top" Height="78" Margin="557,326,-4,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem x:Name="txtVous" Content="" VerticalAlignment="Top" Height="78" Margin="558,396,-5,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem Content="Vous:" VerticalAlignment="Top" Height="78" Margin="377,396,176,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem Content="Ils/Elles:" VerticalAlignment="Top" Height="78" Margin="378,466,175,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    	<GridViewHeaderItem x:Name="txtElles" Content="" VerticalAlignment="Top" Height="78" Margin="557,466,-4,0" FontSize="32" Grid.Column="1">
+    		<GridViewHeaderItem.ContentTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition/>
+    			</TransitionCollection>
+    		</GridViewHeaderItem.ContentTransitions>
+    	</GridViewHeaderItem>
+    </Grid>
+</Page>
+

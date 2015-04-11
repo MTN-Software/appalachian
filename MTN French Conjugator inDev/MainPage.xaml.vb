@@ -7,9 +7,9 @@ Imports Microsoft.Phone.Tasks
 Imports Coding4Fun.Toolkit.Controls
 Imports Windows.Phone.Speech
 Imports Microsoft.Phone.Controls
-Imports Microsoft.Devices.Sensors.Accelerometer
-Imports Microsoft.Devices.Sensors
-
+Imports Windows.ApplicationModel.Core
+Imports System.Threading.Tasks
+Imports Windows.Storage
 Partial Public Class MainPage
     Inherits PhoneApplicationPage
 
@@ -17,25 +17,51 @@ Partial Public Class MainPage
     Public Sub New()
         InitializeComponent()
 
+
     End Sub
 
     Private getIPVerbCong As IPVerbs
 
     Dim msgHelp As New MessagePrompt
     Dim brushAccent As Brush
-    Dim accelerometer As Accelerometer
-    Dim accelRead As New AccelerometerReading()
 
-
+    
     Private Sub MainPage_Loaded(sender As Object, e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
-
+        isFirstRun()
         intTense = 1
         intSubject = 0
         txtVerb.Text = "Enter Verb Here"
         txtCurrentVerb.Text = "Enter Verb"
         blnIsIrregular = False
+
     End Sub
 
+    Private Function isFirstRun() As Boolean
+        Dim blnRanBefore As Boolean
+
+        Try
+            blnRanBefore = ApplicationData.Current.LocalSettings.Values("ranAppBefore").Equals(True)
+        Catch ex As Exception
+            'MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK)
+            'ApplicationData.Current.LocalSettings.Values.Add("ranAppBefore", False)
+            blnRanBefore = False
+        End Try
+
+
+
+        If (blnRanBefore <> True) Then
+            Dim dlgResult = MessageBox.Show("There is a new beta for MTN Software's French Conjugator!\n Why not try it out and support us by purchasing the paid edition?", "Hey There", MessageBoxButton.OKCancel)
+            If dlgResult = MessageBoxResult.OK Then
+                Dim market As New MarketplaceDetailTask()
+                market.ContentType = MarketplaceContentType.Applications
+                market.ContentIdentifier = "9b84e0ec-3dfd-4534-b4e3-8060506a30d7"
+                market.Show()
+            End If
+
+        End If
+
+        Return True
+    End Function
 
     Private Sub txtVerb_GotFocus(sender As Object, e As System.Windows.RoutedEventArgs) Handles txtVerb.GotFocus
         txtVerb.Text = String.Empty
@@ -237,7 +263,7 @@ Partial Public Class MainPage
             msgOops.Message = "So... This just happened: " & vbNewLine & ex.Message
             msgOops.Show()
         End Try
-        
+
 
     End Sub
 End Class

@@ -1,5 +1,15 @@
-﻿Partial Public Class App
+﻿Imports Microsoft.ApplicationInsights
+Imports System.Threading.Tasks
+Imports Windows.Storage
+Imports Windows.ApplicationModel.Core
+Imports Microsoft.Phone.Tasks
+
+Partial Public Class App
     Inherits Application
+    ''' <summary>
+    ''' Allows tracking page views, exceptions and other telemetry through the Microsoft Application Insights service.
+    ''' </summary>
+    Public Shared TelemetryClient As TelemetryClient
 
     ''' <summary>
     ''' Provides easy access to the root frame of the Phone Application.
@@ -11,8 +21,12 @@
     ''' Constructor for the Application object.
     ''' </summary>
     Public Sub New()
+        TelemetryClient = New TelemetryClient()
+
         ' Standard Silverlight initialization
         InitializeComponent()
+
+        'Me.isFirstRun()
 
         ' Phone-specific initialization
         InitializePhoneApplication()
@@ -86,6 +100,7 @@
     ' Do not add any additional code to this method
     Private Sub InitializePhoneApplication()
         If phoneApplicationInitialized Then
+
             Return
         End If
 
@@ -112,5 +127,7 @@
         RemoveHandler RootFrame.Navigated, AddressOf CompleteInitializePhoneApplication
     End Sub
 #End Region
+
+    
 
 End Class

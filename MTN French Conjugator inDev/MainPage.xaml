@@ -6,7 +6,6 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    toolkit:TiltEffect.IsTiltEnabled="True"
     mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
@@ -47,7 +46,7 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="MTN SOFTWARE" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource Foreground1}"></TextBlock>
-            <TextBlock x:Name="PageTitle" Text="French Verbs" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource Foreground1}" toolkit:TiltEffect.IsTiltEnabled="True" toolkit:TiltEffect.SuppressTilt="false" RenderTransformOrigin="0.5,0.5" TextOptions.TextHintingMode="Animated" />
+            <TextBlock x:Name="PageTitle" Text="French Verbs" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource Foreground1}" RenderTransformOrigin="0.5,0.5" TextOptions.TextHintingMode="Animated" />
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -65,7 +64,7 @@
                 <ListBoxItem Content="Elles/Ils" BorderThickness="3" Name="listElles" FontSize="26" Margin="10,26,0,0" />
             </ListBox>
 
-            <Button Content="Conjugate" Height="72" HorizontalAlignment="Left" Margin="-12,429,0,0" Name="btnConjugate" VerticalAlignment="Top" Width="480" BorderBrush="{StaticResource PhoneAccentBrush}" Background="{x:Null}" toolkit:TiltEffect.SuppressTilt="false" />
+            <Button Content="Conjugate" Height="72" HorizontalAlignment="Left" Margin="-12,429,0,0" Name="btnConjugate" VerticalAlignment="Top" Width="480" BorderBrush="{StaticResource PhoneAccentBrush}" Background="{x:Null}" />
             <ListBox Height="261" Margin="228,162,6,184" Name="listVerbTense" Width="222" BorderThickness="3" RenderTransformOrigin="0.5,0.5" >
                 <ListBoxItem Content="Present"  BorderThickness="3" Margin="10,26,0,0" IsSelected="True" FontSize="26" Name="listPresent" />
                 <ListBoxItem Content="Past"  BorderThickness="3" Margin="10,26,0,0" FontSize="26" Name="listPast" IsEnabled="True" />
