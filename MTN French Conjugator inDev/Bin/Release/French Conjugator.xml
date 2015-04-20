@@ -6,15 +6,11 @@ FrenchConjugator
 </name>
 </assembly>
 <members>
-<member name="M:French_Conjugator.SuggestPage.InitializeComponent">
+<member name="M:French_Conjugator.MainPage.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
-</member><member name="M:French_Conjugator.AboutPage.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="M:French_Conjugator.MainPage.InitializeComponent">
+</member><member name="M:French_Conjugator.SuggestPage.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
@@ -23,10 +19,6 @@ InitializeComponent
 InitializeComponent
 </summary>
 </member><member name="M:French_Conjugator.ReportPage.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="M:French_Conjugator.App.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
@@ -43,6 +35,14 @@ InitializeComponent
 	<summary>
  Constructor for the Application object.
  </summary>
+</member><member name="M:French_Conjugator.App.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:French_Conjugator.AboutPage.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
 </member>
 </members>
 </doc>
